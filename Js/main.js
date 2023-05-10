@@ -18,11 +18,6 @@ $('.competitions').click(function(){
     $('.competitions1').slideToggle(1000)
 })
 
-
-
-
-
-
 })
 
 
@@ -40,13 +35,63 @@ setInterval(() => {
 
 
 
-// let scale = 1.0;
-// let maxscale = 1.29
 
-// setInterval(function() {
-//     scale += 0.003;
-//     background.style.transform = "scale(" + scale + ")";
-//     if(scale >= maxscale){
-//         scale = 1.0
-//     }
-//   }, 100);
+
+// ******************************apparition animation our club*****************************
+function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('rotateInUpRight');
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+  
+  const rotateInSection = document.querySelector('.rotateInUpRight');
+  const slideInSection = document.querySelectorAll('.animation-1');
+  
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.8 // Pourcentage de visibilité nécessaire pour déclencher l'animation
+  };
+  
+  const observer = new IntersectionObserver(handleIntersection, observerOptions);
+  
+  if (rotateInSection) {
+    observer.observe(rotateInSection);
+  }
+  
+  slideInSection.forEach(section => {
+    observer.observe(section);
+  });
+
+
+
+  function handlesection(entries, obser) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('rotateInDownRight');
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+  
+  const rotate = document.querySelector('.rotateInDownRight');
+  const slideIn = document.querySelectorAll('.animation-2');
+  
+  const observerOpt = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.8 // Pourcentage de visibilité nécessaire pour déclencher l'animation
+  };
+  
+  const obser = new IntersectionObserver(handlesection, observerOpt);
+  
+  if (rotate) {
+    obser.observe(rotate);
+  }
+  
+  slideIn.forEach(section => {
+    obser.observe(section);
+  });

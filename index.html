@@ -17,12 +17,13 @@
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <!-- ------------Js---------------- -->
     
-    
 </head>
 
 <body>
     <header class="wrapper" id="test">
-        <div id="back"></div>
+        <div class="max-back">
+            <div id="back"></div>
+        </div>
         <div class="navigation-principal">
             <div class="logo-nav">
                 <img src="img\logo-tt-color.png" alt="Logo as mornant">
@@ -65,7 +66,7 @@
             <h1>Bienvenue sur le site de l'<strong>AS MORNANT</strong></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque praesentium recusandae
                 necessitatibus nisi velit iusto error, aperiam cumque officia minima!</p>
-                <a href="#">Plus d'info</a>
+                <a href="#">Dernière infos</a>
             </div>
         </header>
         <main class="container">
@@ -74,26 +75,34 @@
                 <h2>Our tennis club offers</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ducimus aut maiores eligendi magnam ullam aliquid laudantium. Labore, reprehenderit dolore.</p>
             </div>
-
+            
             <section class="section-ourclub">
                 <article>
-                    <img src="img/tennis-table.jpg" alt="tennis-table">
+                    <div class="animation-1">
+                        <img src="img/tennis-table.jpg" alt="tennis-table">
+                    </div>
                     <h3>Lorem, ipsum dolor.</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo.</p>
                 </article>
                 <article>
-                    <img src="img/entraineur.png" alt="tennis-table">
+                    <div class="animation-2">
+                        <img src="img/entraineur.png" alt="tennis-table">
+                    </div>
                     <h3>Lorem, ipsum dolor.</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo.</p>
                 </article>
-
+                
                 <article>
-                    <img src="img/garcon.jpg" alt="tennis-table">
+                    <div class="animation-1">
+                        <img src="img/garcon.jpg" alt="tennis-table">
+                    </div>
                     <h3>Lorem, ipsum dolor.</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo.</p>
                 </article>
                 <article>
-                    <img src="img/salle.jpg" alt="tennis-table">
+                    <div class="animation-2">
+                        <img src="img/salle.jpg" alt="tennis-table">
+                    </div>
                     <h3>Lorem, ipsum dolor.</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo.</p>
                 </article>
@@ -106,8 +115,8 @@
             
         </footer>
         
-        
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
         <script src="Js/main.js"></script>
     </body>
-
-</html>
+    
+    </html>

@@ -24,26 +24,34 @@ body {
     background: url('../img/homme-pingpong.jpg');
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 100%;
     width: 100%;
     position: absolute;
     z-index: -1;
     transition: background-image 0.3s linear;
     transition: transform 0.2s ease-in-out;
     animation: kenburns 20s infinite alternate;
+    overflow: hidden;
 }
 
+.max-back{
+    height: 500px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
 
 @keyframes kenburns {
     0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2) translateX(5%);
-    }
-    100% {
-      transform: scale(1) translateX(0);
-    }
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
   }
 
 .wrapper{
@@ -84,6 +92,7 @@ body {
     display: none;
     position: absolute;
     width: 100%;
+    z-index: 20;
 }
 
 .nav-bar li{
@@ -137,8 +146,21 @@ body {
 
 .text-header{
     width: 90%;
-    margin: 20rem auto;
+    margin: 15rem auto;
+    position: relative;
+    animation: left 1.2s ease-in-out;
+
 }
+
+@keyframes left { 
+    0%{
+        left:-100%
+    } 
+    100%{
+        left: 0%;
+    }
+}
+
 
 .text-header p{
     font-size: 1.2rem;
@@ -158,6 +180,11 @@ body {
 
 /* ****************************OUR TENNIS CLUB OFFER********************************* */
 
+.ourtennisclub p:first-child{
+    color: var(--second-color)
+}
+
+
 .container{
     margin: auto;
     width: 90%;
@@ -165,18 +192,74 @@ body {
 
 .ourtennisclub{
     text-align: center;
-    margin-top: 25rem;
     display: block;
 }
 
 .section-ourclub img{
-    width: 100%;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     border: 8px solid white;
     box-shadow: 5px 5px 15px black;
 }
 
+.section-ourclub h3{
+    color: var(--principal-color);
+}
+
 .section-ourclub article{
     text-align: center;
+}
+
+.section-ourclub p{
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.animation-1{
+    opacity: 0;
+    transition: opacity 1.5s linear;
+}
+
+.animation-2{
+    opacity: 0;
+    transition: opacity 1.5s linear;
+}
+
+.rotateInUpRight{
+    animation-name: rotateInUpRight ;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+.rotateInDownRight{
+    animation-name: rotateInDownRight;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+@keyframes rotateInUpRight {
+    0% {
+        transform-origin: right bottom;
+        transform: rotate3d(0,0,1,-90deg);
+        opacity: 0;
+    }
+    100%{
+        transform-origin: right bottom;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes rotateInDownRight {
+    0% {
+        transform-origin: right bottom;
+        transform: rotate3d(0,0,1,45deg);
+        opacity: 0;
+    }
+    100%{
+        transform-origin: right bottom;
+        transform: none;
+        opacity: 1;
+    }
 }
