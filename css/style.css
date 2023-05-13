@@ -296,6 +296,7 @@ hr{
     margin-top: 8rem;
     border-radius: 20px;
     box-shadow: 0px 1px 10px black;
+    
 }
 
 .section-nouveaute img{
@@ -378,7 +379,7 @@ hr{
 
 
 .nouveaute button {
-    width: 80%;
+    width: 40%;
     margin: auto;
     display: block;
     margin-top: 2rem;
@@ -466,4 +467,41 @@ hr{
     content:'\f005';
     color: rgb(182, 41, 41);
     margin-left: -2.2rem
+}
+
+.animation-droite{
+    opacity: 0;
+    transition: opacity 1.5s linear;
+}
+
+.animation-gauche{
+    opacity: 0;
+    transition: opacity 1.5s linear;
+}
+
+.right{
+    position: relative;
+    animation-name: right;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+.left{
+    position: relative;
+    animation-name: left;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+
+
+@keyframes right { 
+    0%{
+        right:-100%;
+        opacity: 0;
+    } 
+    100%{
+        right: 0%;
+        opacity: 1;
+    }
 }
