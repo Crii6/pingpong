@@ -4,12 +4,12 @@
 
 html {
 	font-size: 62.5%; 
+    scroll-behavior: smooth;
 }
 
 body {
 	font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
 }
 
 :root{
@@ -82,8 +82,17 @@ body {
 
 /*----------------------navigation------------------------*/
 
+.fa-solid:before{
+    font-family: FontAwesome;
+    content: '\f0c9';
+}
 
-.fa-bars{
+.cross:before{
+    font-family: FontAwesome;
+    content: '\f00d';
+}
+
+.fa-solid,.cross{
     font-size: 3rem;
     color: var(--second-color);
 }
@@ -172,7 +181,8 @@ body {
     border-radius: 1rem;
     display: inline-block;
     margin-top: 2rem;
-    color: white
+    color: white;
+    
 }
 
 
@@ -196,8 +206,8 @@ body {
 }
 
 .section-ourclub img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 8px solid white;
     box-shadow: 5px 5px 15px black;
@@ -262,4 +272,198 @@ body {
         transform: none;
         opacity: 1;
     }
+}
+
+hr{
+    margin-top: 12rem;
+}
+
+
+/* ****************************DERNIERE INFOS********************************* */
+
+.section-nouveaute{
+    margin-top: 10rem;
+}
+.section-nouveaute h2{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    
+}
+
+.section-nouveaute article{
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-top: 8rem;
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px black;
+}
+
+.section-nouveaute img{
+    width: 100%;
+}
+
+.nouveaute div{
+    height: 60px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-bottom: 1rem;
+}
+
+.nouveaute img{
+    width: 80%;
+    height: 100%;
+}
+
+.nouveaute{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 10rem 0;
+}
+
+.nouveaute h3,.nouveaute p{
+    width: 90%;
+    margin: auto;
+}
+
+.nouveaute h3{
+    color: var(--second-color);
+    margin: 0 auto 2rem;
+}
+
+.nouveaute p{
+    font-size: 1.4rem;
+    color: var(--principal-color);
+    margin-top: 4rem;
+}
+
+.slider{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.slider img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.nouveaute date{
+    font-size: 1.2rem;
+}
+
+.nouveaute ul{
+    text-align: left;
+}
+
+.nouveaute li{
+    color: var(--principal-color);
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    width: 90%;
+    list-style: none;
+}
+
+.lien-classement{
+    color: var(--second-color)
+}
+
+/* ------------------modal box----------------- */
+
+
+.nouveaute button {
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 2rem;
+    background: linear-gradient(90deg, var(--principal-color) 40%, var(--second-color) 95%);
+    border: 0;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    transition: background 1s ease-in-out;
+    background-size: 200% 100%;
+    background-position: right;
+}
+
+.nouveaute button.reverse {
+    background-position: left;
+}
+
+
+.modal button{
+    width: 90%;
+    margin: auto;
+    display: block;
+    margin-top: 5rem;
+    background: linear-gradient(to right, var(--principal-color), var(--second-color) 70%);
+    border: 0;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+}
+
+
+
+.overlay{
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    overflow: auto;
+    display: none;
+}
+
+.overlay.visible{
+    display: block;
+}
+
+
+.modal{
+    color: var(--principal-color);
+    position: fixed;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 90%;
+    z-index: 200;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 3rem;
+    background-color: white;
+    line-height: 2.2rem;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
+}
+
+.modal.visible{
+    left: 50%;
+}
+
+.modal h3{
+    color: var(--second-color);
+}
+
+.modal p{
+    margin: 4rem 0;
+}
+
+.modal li{
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.modal li:before{
+    font-family: FontAwesome;
+    content:'\f005';
+    color: rgb(182, 41, 41);
+    margin-left: -2.2rem
 }

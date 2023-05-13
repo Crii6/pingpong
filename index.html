@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- slider slick -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <!-- ------------google font---------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +18,10 @@
     <!-- ------------font awesome---------------- -->
     <script src="https://kit.fontawesome.com/22863556a4.js" crossorigin="anonymous"></script>
     <!-- ------------jQuery---------------- -->
-    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <!-- ------------Js---------------- -->
-    
+
 </head>
 
 <body>
@@ -27,7 +32,7 @@
         <div class="navigation-principal">
             <div class="logo-nav">
                 <img src="img\logo-tt-color.png" alt="Logo as mornant">
-                <i class="fa-solid fa-bars" ></i>
+                <i class="fa-solid test"></i>
             </div>
             <nav class="nav-bar">
                 <ul class="sous">
@@ -60,63 +65,137 @@
                     <li><a href="#">Classement joueurs</a></li>
                 </ul>
             </nav>
-            
+
         </div>
         <div class="text-header">
             <h1>Bienvenue sur le site de l'<strong>AS MORNANT</strong></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque praesentium recusandae
                 necessitatibus nisi velit iusto error, aperiam cumque officia minima!</p>
-                <a href="#">Dernière infos</a>
-            </div>
-        </header>
-        <main class="container">
-            <div class="ourtennisclub">
-                <p>Lorem, ipsum.</p>
-                <h2>Our tennis club offers</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ducimus aut maiores eligendi magnam ullam aliquid laudantium. Labore, reprehenderit dolore.</p>
-            </div>
-            
-            <section class="section-ourclub">
-                <article>
-                    <div class="animation-1">
-                        <img src="img/tennis-table.jpg" alt="tennis-table">
+            <a href="#infos">Dernière infos</a>
+        </div>
+    </header>
+    <main class="container">
+        <div class="ourtennisclub">
+            <p>Lorem, ipsum.</p>
+            <h2>Our tennis club offers</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ducimus aut maiores eligendi magnam
+                ullam aliquid laudantium. Labore, reprehenderit dolore.</p>
+        </div>
+
+        <section class="section-ourclub">
+            <article>
+                <div class="animation-1">
+                    <img src="img/tennis-table.jpg" alt="tennis-table">
+                </div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo.</p>
+            </article>
+            <article>
+                <div class="animation-2">
+                    <img src="img/entraineur.png" alt="tennis-table">
+                </div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo.</p>
+            </article>
+
+            <article>
+                <div class="animation-1">
+                    <img src="img/garcon.jpg" alt="tennis-table">
+                </div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo.</p>
+            </article>
+            <article>
+                <div class="animation-2">
+                    <img src="img/salle.jpg" alt="tennis-table">
+                </div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo.</p>
+            </article>
+        </section>
+        <hr>
+        <section class="section-nouveaute">
+            <h2 id="infos">Dernière infos</h2>
+            <article>
+                <div class="nouveaute">
+                    <div>
+                        <img src="img/raq-tt-color.png" alt="logo-raquette">
                     </div>
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo.</p>
-                </article>
-                <article>
-                    <div class="animation-2">
-                        <img src="img/entraineur.png" alt="tennis-table">
+                    <h3>Soirée choucroute</h3>
+                    <p>L'AS Mornant TT et l'amicale Boule Mornantaise ont organisé ensemble une soirée choucroute le 25
+                        mars 2023.</p>
+                    <p>Plus de 200 personnes ont répondu présent. Une belle soirée pour les 2 associations mornantaises</p>
+                </div>
+            </article>
+            <article>
+                <div class="slider">
+                    <div><img src="img/tournoi-jeune2.jpg" alt="tournoi-jeune2"></div>
+                    <div><img src="img/tournoi-jeune1.jpg" alt="tournoi-jeune1"></div>
+                </div>
+                <div class="nouveaute">
+                    <div>
+                        <img src="img/raq-tt-color2.png" alt="logo-raquette">
                     </div>
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo.</p>
-                </article>
-                
-                <article>
-                    <div class="animation-1">
-                        <img src="img/garcon.jpg" alt="tennis-table">
+                    <h3>Tournoi jeunes du Club</h3>
+                    <p>Le tournoi jeunes du Club s'est déroulé le 11 mars 2023. Un très bon moment apprécié des jeunes...</p>
+                    <button type="button" id="open">Lire la suite..</button>
+                </div>
+                <div class="overlay"></div>
+                <div class="modal">
+                    <h3>Le tournoi jeunes s'est déroulé le samedi 11 mars 2023 à Mornant</h3>
+                    <p>32 jeunes ont participé dont une douzaine de Mornant. Les clubs représentés ont été les suivants : Lyon 6, Mions, Rhône-Garon, Messimy et Orliénas.</p>
+                    <ul>
+                        <li> <strong>Merci aux présents</strong> pour leur participation à l'installation, à la gestion de la buvette et au rangement </li>
+                        <li> <strong>Merci et bravo à Dominique</strong> qui a dirigé le tournoi de main de maître </li>
+                        <li> <strong>Merci particulièrement à la maman de Lenny Viollet</strong> qui a réussi à trouver de jolis lots au dernier moment </li>
+                        <li> <strong>Merci enfin à Cédric Belmont</strong> qui a fabriqué en découpe laser des porte-clés et des trophées superbes en plexiglas </li>
+                    </ul>
+                    <button type="button" id="close">Fermer</button>
+                </div>
+            </article>
+            <article>
+                <div class="nouveaute">
+                    <div>
+                        <img src="img/raq-tt-color.png" alt="logo-raquette">
                     </div>
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo.</p>
-                </article>
-                <article>
-                    <div class="animation-2">
-                        <img src="img/salle.jpg" alt="tennis-table">
+                    <h3>5ème journée du championnat WE par équipe Phase 2</h3>
+                    <date>Dimanche 2 avril 2023</date>
+                    <p>Voici le bilan des équipes à l'issue de cette 5ème journée :</p>
+                    <ul>
+                        <li><strong>Équipe 1 en PR</strong> : pour l'instant, 4 victoires et un nul. Toujours la 1ère place de la poule. La montée se rapproche.</li>
+                        <li><strong>Équipe 2 en D1</strong> : 3 victoires et 2 défaites. Une belle équipe solide.</li>
+                        <li><strong>Équipe 3 en D2</strong> : deux victoires et 3 défaites.</li>
+                        <li><strong>Équipe 4 en D2</strong> : une victoire et 3 défaites. Il faut persévérer en D2.</li>
+                        <li><strong>Équipe 5 en D3</strong> : 2 victoires et 3 défaites. Un dernier match plein de promesses !</li>
+                    </ul>
+                    <p><a href="#" class="lien-classement">Les Classements des joueurs sont à jour (mars 2023)</a></p>               
+                </div>
+            </article>
+            <article>
+                <div class="slider">
+                    <div><img src="img/maillot.jpg" alt="maillot"></div>
+                    <div><img src="img/short.jpg" alt="short"></div>
+                </div>
+                <div class="nouveaute">
+                    <div>
+                        <img src="img/raq-tt-color2.png" alt="logo-raquette">
                     </div>
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo.</p>
-                </article>
-            </section>
-            
-            
-            
-        </main>
-        <footer>
-            
-        </footer>
-        
-        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-        <script src="Js/main.js"></script>
-    </body>
-    
-    </html>
+                    <h3>NOUVELLE TENUE</h3>
+                    <p>La nouvelle tenue de l'AS MORNANT TT est arrivée.
+                        Merci Cédric</p>
+                </div>
+            </article>
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+
+</html>

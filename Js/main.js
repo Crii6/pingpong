@@ -1,11 +1,27 @@
-// ************************nav*****************
+// *************initialisation slick************
+
+
+$(document).ready(function(){
+  $('.slider').slick({
+  });
+});
+
+
+
+
 
 $(function(){
 
- $('i.fa-bars').click(function(){
-    $('nav.nav-bar').slideToggle(1000)
- })
+// ************************nav*****************
 
+
+
+ $('i.test').click(function(){
+    $('nav.nav-bar').slideToggle(1000)
+    $('i.test').toggleClass('fa-solid')
+    $('i.test').toggleClass('cross')
+ })
+ 
 $('.club').click(function(){
     $('.club1').slideToggle(1000)
 })
@@ -17,6 +33,31 @@ $('.entrainement').click(function(){
 $('.competitions').click(function(){
     $('.competitions1').slideToggle(1000)
 })
+
+// *************************modal****************
+
+$('#open').click(function(){
+  $('#open').addClass('reverse')
+  setTimeout(function(){
+    $('.overlay').addClass('visible')
+    $('.modal').addClass('visible')
+  },1000)
+
+})
+
+$('#close').click(function(){
+   $('.overlay').removeClass('visible')
+   $('.modal').removeClass('visible')
+   $('#open').removeClass('reverse')
+})
+
+$('.overlay').click(function(){
+  $('.overlay').removeClass('visible')
+   $('.modal').removeClass('visible')
+   $('#open').removeClass('reverse')
+})
+
+
 
 })
 
