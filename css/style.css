@@ -1,18 +1,18 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-	font-size: 62.5%; 
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
 body {
-	font-size: 1.6rem;
+    font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
 }
 
-:root{
+:root {
     --principal-color: #172958;
     --second-color: #FF583B;
 }
@@ -20,7 +20,7 @@ body {
 
 /* ************************HEADER********************* */
 
-#back{
+#back {
     background: url('../img/homme-pingpong.jpg');
     background-size: cover;
     background-position: center;
@@ -34,8 +34,8 @@ body {
     overflow: hidden;
 }
 
-.max-back{
-    height: 500px;
+.max-back {
+    height: 700px;
     position: absolute;
     width: 100%;
     overflow: hidden;
@@ -45,144 +45,157 @@ body {
 @keyframes kenburns {
     0% {
         transform: scale(1);
-      }
-      50% {
-        transform: scale(1.2);
-      }
-      100% {
-        transform: scale(1);
-      }
-  }
+    }
 
-.wrapper{
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.wrapper {
     color: white;
     width: 100%;
+    height: 700px;
 }
 
 
 
-.navigation-principal img{
+.navigation-principal img {
     width: 150px;
-    /* margin-top: 1rem;  */
-    margin-left: 2rem;
+    margin-top: 1rem; 
+    /* margin-left: 2rem; */
 }
 
 
 .logo-nav {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-evenly;
+   
 }
 
-.logo-nav i{
+
+.logo-nav i {
     cursor: pointer;
-    margin-left: 15%
+    margin-left: 15%;
 }
 
 
 
 /*----------------------navigation------------------------*/
 
-.fa-solid:before{
+.fa-solid:before {
     font-family: FontAwesome;
     content: '\f0c9';
 }
 
-.cross:before{
+.cross:before {
     font-family: FontAwesome;
     content: '\f00d';
+    padding: 0.2rem;
 }
 
-.fa-solid,.cross{
+.fa-solid,
+.cross {
     font-size: 3rem;
     color: var(--second-color);
 }
 
-.nav-bar{
+.nav-bar {
     display: none;
     position: absolute;
     width: 100%;
     z-index: 20;
 }
 
-.nav-bar li{
+.nav-bar li {
     list-style: none;
 }
 
-.wrapper a{
+.wrapper a {
     text-decoration: none;
     color: black;
 }
 
-.sous{
+.sous {
     padding: 0;
 }
 
-.sous > li{
+.sous>li {
     background-color: white;
     border-radius: 0.5rem;
 
 }
 
-.sous li > a{
- display: block;
- padding: 1.5rem 2rem;
- margin-top: 0.1rem;
+.sous li>a {
+    display: block;
+    padding: 1.5rem 2rem;
+    margin-top: 0.1rem;
 
 }
 
-.current{
+.current {
     background-color: var(--principal-color);
-    color: white!important;
+    color: white !important;
     border-radius: 0.5rem;
 }
 
-.sous a:hover{
+.sous a:hover {
     color: var(--second-color);
 }
 
-.icon:after{
+.icon:after {
     font-family: FontAwesome;
     content: '\f107';
     margin-left: 1rem;
 }
 
-.sous-menu2{
+.sous-menu2 {
     display: none;
 }
 
 
 /* -------------------text bienvenue---------------------------- */
 
-.text-header{
+.text-header {
     width: 90%;
-    margin: 15rem auto;
+    margin: auto;
     position: relative;
     animation: left 1.2s ease-in-out;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    height: 550px;
 }
 
-@keyframes left { 
-    0%{
-        left:-100%
-    } 
-    100%{
+@keyframes left {
+    0% {
+        left: -100%
+    }
+
+    100% {
         left: 0%;
     }
 }
 
 
-.text-header p{
+.text-header p {
     font-size: 1.2rem;
 }
 
-.text-header a{
+.text-header a {
     background: linear-gradient(to right, var(--principal-color), var(--second-color) 70%);
     padding: 1rem 2rem;
     border-radius: 1rem;
     display: inline-block;
     margin-top: 2rem;
     color: white;
-    
+
 }
 
 
@@ -190,28 +203,28 @@ body {
 
 /* ****************************OUR TENNIS CLUB OFFER********************************* */
 
-.fond-ourtennisclub{
+.fond-ourtennisclub {
     background-color: rgba(0, 0, 0, 0.03);
-    padding: 2rem 1.5rem 7rem;
+    padding: 2rem 1.5rem 5rem;
 }
 
 
-.ourtennisclub p:first-child{
+.ourtennisclub p:first-child {
     color: var(--second-color)
 }
 
 
-.container{
-    margin: auto;
+.container {
+    margin: 4rem auto;
     width: 90%;
 }
 
-.ourtennisclub{
+.ourtennisclub {
     text-align: center;
     display: block;
 }
 
-.section-ourclub img{
+.section-ourclub img {
     max-width: 240px;
     width: 100%;
     height: 240px;
@@ -220,39 +233,39 @@ body {
     box-shadow: 5px 5px 15px black;
 }
 
-.section-ourclub h3{
+.section-ourclub h3 {
     color: var(--second-color);
     font-size: 2.2rem;
 }
 
-.section-ourclub article{
+.section-ourclub article {
     text-align: center;
 }
 
-.section-ourclub p{
+.section-ourclub p {
     font-size: 1.5rem;
     margin-bottom: 3rem;
     color: var(--principal-color)
 }
 
 
-.animation-1{
+.animation-1 {
     opacity: 0;
     transition: opacity 1.5s linear;
 }
 
-.animation-2{
+.animation-2 {
     opacity: 0;
     transition: opacity 1.5s linear;
 }
 
-.rotateInUpRight{
-    animation-name: rotateInUpRight ;
+.rotateInUpRight {
+    animation-name: rotateInUpRight;
     animation-duration: 1.5s;
     opacity: 1;
 }
 
-.rotateInDownRight{
+.rotateInDownRight {
     animation-name: rotateInDownRight;
     animation-duration: 1.5s;
     opacity: 1;
@@ -261,10 +274,11 @@ body {
 @keyframes rotateInUpRight {
     0% {
         transform-origin: right bottom;
-        transform: rotate3d(0,0,1,-90deg);
+        transform: rotate3d(0, 0, 1, -90deg);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform-origin: right bottom;
         transform: none;
         opacity: 1;
@@ -274,21 +288,23 @@ body {
 @keyframes rotateInDownRight {
     0% {
         transform-origin: right bottom;
-        transform: rotate3d(0,0,1,45deg);
+        transform: rotate3d(0, 0, 1, 45deg);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform-origin: right bottom;
         transform: none;
         opacity: 1;
     }
 }
 
-hr{
-    margin-top: 12rem;
+hr {
+    margin: 7rem auto 5rem;
+    width: 80%;
 }
 
-.section-ourclub a{
+.section-ourclub a {
     background: linear-gradient(to left, var(--principal-color), var(--second-color) 70%);
     padding: 1rem 2rem;
     border-radius: 1rem;
@@ -299,41 +315,42 @@ hr{
     text-decoration: none;
     margin-top: 4rem;
     transition: all 0.3s ease-in-out;
-    
+
 }
 
 
 
-.section-ourclub a:hover{
+.section-ourclub a:hover {
     background: var(--second-color);
     scale: 1.07;
 }
 
 /* ****************************DERNIERE INFOS********************************* */
 
-.section-nouveaute{
-    margin-top: 10rem;
-}
-.section-nouveaute h2{
+
+
+.section-nouveaute h2 {
     text-align: center;
     width: 90%;
-    margin: auto;
-    
+    margin: 0 auto 8rem;
+    text-transform:uppercase;
+    color: var(--principal-color)
+
 }
 
-.section-nouveaute article{
+.section-nouveaute article {
     background-color: rgba(0, 0, 0, 0.05);
-    margin-top: 8rem;
+    margin-top: 4rem;
     border-radius: 20px;
     box-shadow: 0px 1px 10px black;
-    
+
 }
 
-.section-nouveaute img{
+.section-nouveaute img {
     width: 100%;
 }
 
-.nouveaute div{
+.nouveaute div {
     height: 60px;
     width: 60px;
     background-color: rgba(0, 0, 0, 0.9);
@@ -341,16 +358,16 @@ hr{
     border-radius: 100%;
     top: 0;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     padding-bottom: 1rem;
 }
 
-.nouveaute img{
+.nouveaute img {
     width: 80%;
     height: 100%;
 }
 
-.nouveaute{
+.nouveaute {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -359,41 +376,42 @@ hr{
     padding: 8rem 0;
 }
 
-.nouveaute h3,.nouveaute p{
+.nouveaute h3,
+.nouveaute p {
     width: 90%;
     margin: auto;
 }
 
-.nouveaute h3{
+.nouveaute h3 {
     color: var(--second-color);
     margin: 0 auto 2rem;
 }
 
-.nouveaute p{
+.nouveaute p {
     font-size: 1.5rem;
     color: var(--principal-color);
     margin-top: 4rem;
 }
 
-.slider{
+.slider {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.slider img{
+.slider img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.nouveaute date{
+.nouveaute date {
     font-size: 1.2rem;
 }
 
-.nouveaute ul{
+.nouveaute ul {
     text-align: left;
 }
 
-.nouveaute li{
+.nouveaute li {
     color: var(--principal-color);
     margin-top: 3rem;
     font-size: 1.4rem;
@@ -401,7 +419,7 @@ hr{
     list-style: none;
 }
 
-.lien-classement{
+.lien-classement {
     color: var(--second-color)
 }
 
@@ -428,7 +446,7 @@ hr{
 }
 
 
-.modal button{
+.modal button {
     width: 90%;
     margin: auto;
     display: block;
@@ -442,9 +460,9 @@ hr{
 
 
 
-.overlay{
+.overlay {
     position: fixed;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100vh;
     top: 0;
@@ -454,12 +472,12 @@ hr{
     display: none;
 }
 
-.overlay.visible{
+.overlay.visible {
     display: block;
 }
 
 
-.modal{
+.modal {
     color: var(--principal-color);
     position: fixed;
     border: 1px solid black;
@@ -467,7 +485,7 @@ hr{
     width: 90%;
     z-index: 200;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     padding: 3rem;
     background-color: white;
     line-height: 2.2rem;
@@ -475,48 +493,48 @@ hr{
     transition: left 0.5s ease-in-out;
 }
 
-.modal.visible{
+.modal.visible {
     left: 50%;
 }
 
-.modal h3{
+.modal h3 {
     color: var(--second-color);
 }
 
-.modal p{
+.modal p {
     margin: 4rem 0;
 }
 
-.modal li{
+.modal li {
     margin-bottom: 2rem;
     list-style: none;
 }
 
-.modal li:before{
+.modal li:before {
     font-family: FontAwesome;
-    content:'\f005';
+    content: '\f005';
     color: rgb(182, 41, 41);
     margin-left: -2.2rem
 }
 
-.animation-droite{
+.animation-droite {
     opacity: 0;
     transition: opacity 1.5s linear;
 }
 
-.animation-gauche{
+.animation-gauche {
     opacity: 0;
     transition: opacity 1.5s linear;
 }
 
-.right{
+.right {
     position: relative;
     animation-name: right;
     animation-duration: 1.5s;
     opacity: 1;
 }
 
-.left{
+.left {
     position: relative;
     animation-name: left;
     animation-duration: 1.5s;
@@ -525,12 +543,13 @@ hr{
 
 
 
-@keyframes right { 
-    0%{
-        right:-100%;
+@keyframes right {
+    0% {
+        right: -100%;
         opacity: 0;
-    } 
-    100%{
+    }
+
+    100% {
         right: 0%;
         opacity: 1;
     }
@@ -539,24 +558,94 @@ hr{
 
 /* ****************************************FOOTER***********************************/
 
-footer{
-    width: 90%;
-    margin-top: 5rem;
+footer {
     color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.pied-page img{
-    width: 200px;
-}
-
-.footerback{
+.footerback {
     background: url('../img/stock-photo-tennis.jpg');
     background-position: center;
     background-size: cover;
-    filter: blur(4px);
-    height: 600px;
+    filter: blur(2px);
+    height: 800px;
     width: 100%;
     position: absolute;
     z-index: -1;
+    /* border-radius: 2rem; */
 }
+.pied-page {
+    width: 95%;
+    margin: 1rem auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 1px 10px white;
+    /* border-bottom: 2rem; */
+    height: 780px;
+}
+
+.logo-mornant img {
+    width: 200px;
+}
+.logo-mornant {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.footer-list h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.footer-list {
+    text-align: center;
+    border-top: 1px solid rgb(133, 133, 133);
+    width: 60%;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+.footer-list ul{
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+    color: var(--second-color);
+}
+
+.footer-list a{
+    color: var(--second-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.icon-footer{
+    text-align: center;
+    border-top: 1px solid rgb(133, 133, 133);
+    width: 60%;
+    margin: auto;
+}
+
+.icon-footer a{
+    font-size: 4rem;
+    display: inline-block;
+    color: white;
+    padding: 3rem 0;
+}
+
+.partenaire h3{
+    border-top: 1px solid rgb(133, 133, 133);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 3rem 0;
+    color: rgb(255, 255, 255);
+}
+
+
+.partenaire img {
+    width: 70px;
+}
+
 
