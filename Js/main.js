@@ -17,21 +17,21 @@ $(function () {
 
 
   $('i.test').click(function () {
-    $('nav.nav-bar').slideToggle(1000)
+    $('nav.nav-bar').slideToggle(600)
     $('i.test').toggleClass('fa-solid')
     $('i.test').toggleClass('cross')
   })
 
   $('.club').click(function () {
-    $('.club1').slideToggle(1000)
+    $('.club1').slideToggle(600)
   })
 
   $('.entrainement').click(function () {
-    $('.entrainement1').slideToggle(1000)
+    $('.entrainement1').slideToggle(600)
   })
 
   $('.competitions').click(function () {
-    $('.competitions1').slideToggle(1000)
+    $('.competitions1').slideToggle(600)
   })
 
   // *************************modal****************
@@ -78,7 +78,7 @@ setInterval(() => {
 
 
 
-// ******************************apparition animation our club*****************************
+// ******************************************apparition animation our club***************************************
 function handleIntersection(entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -138,6 +138,7 @@ slideIn.forEach(section => {
   obser.observe(section);
 });
 
+// ******************************************apparition animation Dernière infos***************************************
 
 
 function apparaitdroite(entries,obserright){
@@ -197,3 +198,4 @@ if (apparait) {
 gauche.forEach(section => {
   obserleft.observe(section)
 })
+

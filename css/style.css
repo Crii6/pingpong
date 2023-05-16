@@ -190,6 +190,12 @@ body {
 
 /* ****************************OUR TENNIS CLUB OFFER********************************* */
 
+.fond-ourtennisclub{
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 2rem 1.5rem 7rem;
+}
+
+
 .ourtennisclub p:first-child{
     color: var(--second-color)
 }
@@ -206,15 +212,17 @@ body {
 }
 
 .section-ourclub img{
-    width: 250px;
-    height: 250px;
+    max-width: 240px;
+    width: 100%;
+    height: 240px;
     border-radius: 50%;
     border: 8px solid white;
     box-shadow: 5px 5px 15px black;
 }
 
 .section-ourclub h3{
-    color: var(--principal-color);
+    color: var(--second-color);
+    font-size: 2.2rem;
 }
 
 .section-ourclub article{
@@ -222,9 +230,11 @@ body {
 }
 
 .section-ourclub p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 3rem;
+    color: var(--principal-color)
 }
+
 
 .animation-1{
     opacity: 0;
@@ -278,6 +288,26 @@ hr{
     margin-top: 12rem;
 }
 
+.section-ourclub a{
+    background: linear-gradient(to left, var(--principal-color), var(--second-color) 70%);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    display: inline-block;
+    margin-top: 2rem;
+    color: white;
+    text-decoration: none;
+    margin-top: 4rem;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+
+
+.section-ourclub a:hover{
+    background: var(--second-color);
+    scale: 1.07;
+}
 
 /* ****************************DERNIERE INFOS********************************* */
 
@@ -326,7 +356,7 @@ hr{
     flex-direction: column;
     text-align: center;
     height: auto;
-    padding: 10rem 0;
+    padding: 8rem 0;
 }
 
 .nouveaute h3,.nouveaute p{
@@ -340,7 +370,7 @@ hr{
 }
 
 .nouveaute p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--principal-color);
     margin-top: 4rem;
 }
@@ -505,3 +535,28 @@ hr{
         opacity: 1;
     }
 }
+
+
+/* ****************************************FOOTER***********************************/
+
+footer{
+    width: 90%;
+    margin-top: 5rem;
+    color: white;
+}
+
+.pied-page img{
+    width: 200px;
+}
+
+.footerback{
+    background: url('../img/stock-photo-tennis.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px);
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
