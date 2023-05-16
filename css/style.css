@@ -71,10 +71,11 @@ body {
 }
 
 
-.logo-nav {
+.logo-nav div{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+   transition: background-color 1s ease-out;
    
 }
 
@@ -84,7 +85,11 @@ body {
     margin-left: 15%;
 }
 
-
+.nav-scroll{
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+}
 
 /*----------------------navigation------------------------*/
 

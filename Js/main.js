@@ -14,6 +14,7 @@ $(function () {
 
   // ************************nav*****************
 
+ 
 
 
   $('i.test').click(function () {
@@ -61,6 +62,20 @@ $(function () {
 
 })
 
+// ******************************changement d'image background******************************
+window.addEventListener('scroll', function() {
+  var scro = document.getElementById('test1');
+  let nav = document.getElementById('nav')
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop === 0) {
+    scro.classList.remove('nav-scroll');
+    nav.classList.remove('nav-bar-scroll')
+  } else {
+    scro.classList.add('nav-scroll');
+    nav.classList.add('nav-bar-scroll');
+  }
+});
 
 // ******************************changement d'image background******************************
 
