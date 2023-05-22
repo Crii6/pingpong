@@ -75,7 +75,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-   transition: background-color 1s ease-out;
+    transition: all 1.5s ease-out;
    
 }
 
@@ -87,8 +87,11 @@ body {
 
 .nav-scroll{
     background-color: rgba(0,0,0,0.9);
+    /* border-radius: 5rem; */
     position: fixed;
     top: 0;
+    width: 100%;
+    z-index: 2000;
 }
 
 /*----------------------navigation------------------------*/
@@ -115,6 +118,13 @@ body {
     position: absolute;
     width: 100%;
     z-index: 20;
+    top:5%;
+    transition: top 1s ease-in-out;
+}
+
+.nav-bar-scroll{
+    position: fixed;
+    top: 4.5%;
 }
 
 .nav-bar li {
@@ -139,7 +149,7 @@ body {
 .sous li>a {
     display: block;
     padding: 1.5rem 2rem;
-    margin-top: 0.1rem;
+    margin-top: 0rem;
 
 }
 
@@ -250,7 +260,8 @@ body {
 .section-ourclub p {
     font-size: 1.5rem;
     margin-bottom: 3rem;
-    color: var(--principal-color)
+    color: var(--principal-color);
+    text-shadow: 1px 0px 1px var(--principal-color);
 }
 
 
@@ -320,7 +331,7 @@ hr {
     text-decoration: none;
     margin-top: 4rem;
     transition: all 0.3s ease-in-out;
-
+    box-shadow: 2px 2px 5px black;
 }
 
 
@@ -488,7 +499,7 @@ hr {
     border: 1px solid black;
     border-radius: 20px;
     width: 90%;
-    z-index: 200;
+    z-index: 2000;
     top: 50%;
     transform: translate(-50%, -50%);
     padding: 3rem;
