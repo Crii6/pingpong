@@ -17,7 +17,7 @@ window.addEventListener('scroll', function() {
 
 // ******************************changement d'image background******************************
 
-const images = ['url(https://picsum.photos/800/800)', 'url(https://picsum.photos/800/700)', 'url(https://picsum.photos/700/800)', 'url(../img/homme-pingpong.jpg)'];
+const images = [  'url(../img/Photo-concours.png)', 'url(https://picsum.photos/800/800)', 'url(../img/homme-pingpong.jpg)'];
 
 let currentIndex = 0;
 const background = document.getElementById('back');
