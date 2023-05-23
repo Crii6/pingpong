@@ -21,7 +21,7 @@ body {
 /* ************************HEADER********************* */
 
 #back {
-    background: url('../img/homme-pingpong.jpg');
+    background: url('../img/Photo-concours.png');
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -32,7 +32,10 @@ body {
     transition: transform 0.2s ease-in-out;
     animation: kenburns 20s infinite alternate;
     overflow: hidden;
+    left: 0;
 }
+
+
 
 .max-back {
     height: 700px;
@@ -49,6 +52,7 @@ body {
 
     50% {
         transform: scale(1.2);
+        
     }
 
     100% {
@@ -124,7 +128,7 @@ body {
 
 .nav-bar-scroll{
     position: fixed;
-    top: 4.5%;
+    top: 3.7%;
 }
 
 .nav-bar li {
@@ -228,10 +232,14 @@ body {
     color: var(--second-color)
 }
 
+.text-header,.pied-page,.navigation-principal{
+    max-width: 1200px;
+}
 
 .container {
     margin: 4rem auto;
     width: 90%;
+    max-width: 1200px;
 }
 
 .ourtennisclub {
@@ -320,11 +328,20 @@ hr {
     width: 80%;
 }
 
+.boutton-inscription{
+    text-align: center;
+}
+
+.boutton-inscription h3{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
 .section-ourclub a {
     background: linear-gradient(to left, var(--principal-color), var(--second-color) 70%);
     padding: 1rem 2rem;
     border-radius: 1rem;
-    border: 1px solid black;
+    border: 1px solid var(--principal-color);
     display: inline-block;
     margin-top: 2rem;
     color: white;
@@ -337,7 +354,7 @@ hr {
 
 
 .section-ourclub a:hover {
-    background: var(--second-color);
+    /* background: var(--second-color); */
     scale: 1.07;
 }
 
@@ -455,6 +472,7 @@ hr {
     transition: background 1s ease-in-out;
     background-size: 200% 100%;
     background-position: right;
+    box-shadow: 0px 1px 10px black;
 }
 
 .nouveaute button.reverse {
@@ -665,3 +683,165 @@ footer {
 }
 
 
+
+
+
+/* **********************************************************************************************************************
+**********************************************MEDIA QUERY****************************************************
+********************************************************************************************************************** */
+
+
+/* ***************************TABLETTE********************* */
+
+@media screen and (min-width: 780px){
+
+h1{
+    color: green
+}
+
+/* ----------TENNIS  OFFER-------------- */
+
+
+.section-ourclub{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-ourclub article{
+    width: 45%;
+    margin-top: 3rem;
+}
+
+.section-ourclub p{
+    width: 90%;
+    margin: auto;
+}
+
+.boutton-inscription{
+    margin-top:3rem;
+}
+
+/* ----------derniere infos-------------- */
+
+
+}
+
+/* ***************************DESKTOP********************* */
+
+
+@media screen and (min-width: 1100px){
+
+h1{
+    color: pink
+}
+
+/* -------------nav------------- */
+
+.navigation-principal img{
+    width: 200px;
+}
+
+.fa-solid:before {
+    content: none;
+}
+
+.current{
+    background: none;
+    color: var(--second-color)!important;
+}
+
+.nav-scroll{
+    position: relative;
+    background: none;
+}
+
+.navigation-principal{
+    display: flex;
+    margin: auto;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.nav-bar{
+    display: flex;
+    position:initial;
+    justify-content: flex-end;
+}
+
+.sous{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    align-items: center;
+    position: relative;
+}
+
+.sous > li{
+    background: none;
+    position: relative;;
+}
+
+
+
+.sous > li a {
+    color: white;
+    display: block;
+    padding: 0;
+    font-weight: bold;
+}
+
+.sous-menu2 li{
+    background-color: white;
+}
+
+
+.sous-menu2 a{
+    color: black!important;
+    padding: 2rem!important;
+}
+
+.sous-menu2{
+    position: absolute;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.sous li:hover .sous-menu2{
+ display: block;
+}
+
+/* ----------TENNIS  OFFER-------------- */
+
+
+.section-ourclub{
+    justify-content: space-around;
+}
+
+.section-ourclub article{
+    width: 24%;
+}
+
+.section-ourclub p{
+    width: 60%;
+    margin: auto;
+}
+
+
+/* ----------derniere infos-------------- */
+
+.section-nouveaute{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-nouveaute article{
+    width: 45%;
+}
+
+
+
+}
