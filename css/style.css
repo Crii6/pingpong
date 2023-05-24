@@ -789,10 +789,13 @@ h1{
 
 
 .sous > li a {
-    color: white;
     display: block;
     padding: 0;
     font-weight: bold;
+}
+
+.color-white{
+    color: white!important;
 }
 
 .sous-menu2 li{
@@ -810,27 +813,39 @@ h1{
 }
 
 
-.sous-menu2 a{
-    color: black!important;
-    padding: 2rem!important;
-}
+
 
 .sous-menu2{
     position: absolute;
     padding: 0;
     text-align: center;
-    width: 100%;
     margin-top: 2rem;
-    transition: all 1s linear;
+}
+
+.competitions1 li{
+    padding: 1rem 4rem;
 }
 
 .club1{
-    transform: translateX(-20%);
+    transform: translateX(-25%);
 }
 
-.sous li:hover .sous-menu2{
- display: block;
+.club1 li{
+    /* padding: 1rem 4rem; */
 }
+
+.club1 li a{
+    display: inline-block;
+    width: 100%;
+    margin: 2rem 2rem;
+    padding-right: 4rem;
+}
+
+
+
+
+
+
 
 /* ----------TENNIS  OFFER-------------- */
 
