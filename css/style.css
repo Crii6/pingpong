@@ -746,6 +746,10 @@ h1{
     content: none;
 }
 
+.cross:before {
+    content: none;
+}
+
 .current{
     background: none;
     color: var(--second-color)!important;
@@ -795,6 +799,16 @@ h1{
     background-color: white;
 }
 
+.sous-menu2 li:first-child{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.sous-menu2 li:last-child{
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
 
 .sous-menu2 a{
     color: black!important;
@@ -806,6 +820,12 @@ h1{
     padding: 0;
     text-align: center;
     width: 100%;
+    margin-top: 2rem;
+    transition: all 1s linear;
+}
+
+.club1{
+    transform: translateX(-20%);
 }
 
 .sous li:hover .sous-menu2{
@@ -824,7 +844,7 @@ h1{
 }
 
 .section-ourclub p{
-    width: 60%;
+    width: 80%;
     margin: auto;
 }
 
