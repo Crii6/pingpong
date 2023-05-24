@@ -137,7 +137,6 @@ body {
 
 .wrapper a {
     text-decoration: none;
-    color: black;
 }
 
 .sous {
@@ -147,21 +146,21 @@ body {
 .sous>li {
     background-color: white;
     border-radius: 0.5rem;
-
+    color: black
+}
+.current {
+    background-color: var(--principal-color);
+    color: white!important;
+    border-radius: 0.5rem;
 }
 
 .sous li>a {
     display: block;
     padding: 1.5rem 2rem;
     margin-top: 0rem;
-
+    color: black;
 }
 
-.current {
-    background-color: var(--principal-color);
-    color: white !important;
-    border-radius: 0.5rem;
-}
 
 .sous a:hover {
     color: var(--second-color);
@@ -176,6 +175,7 @@ body {
 .sous-menu2 {
     display: none;
 }
+
 
 
 /* -------------------text bienvenue---------------------------- */
@@ -736,6 +736,10 @@ h1{
     color: pink
 }
 
+.max-back{
+    height: 830px
+}
+
 /* -------------nav------------- */
 
 .navigation-principal img{
@@ -750,10 +754,6 @@ h1{
     content: none;
 }
 
-.current{
-    background: none;
-    color: var(--second-color)!important;
-}
 
 .nav-scroll{
     position: relative;
@@ -786,21 +786,27 @@ h1{
     position: relative;;
 }
 
-
+.current{
+    background: none;
+    color: var(--second-color);
+}
 
 .sous > li a {
     display: block;
     padding: 0;
     font-weight: bold;
+    color: white;
 }
 
 .color-white{
-    color: white!important;
+    color: white;
 }
 
 .sous-menu2 li{
     background-color: white;
 }
+
+
 
 .sous-menu2 li:first-child{
     border-top-left-radius: 0.5rem;
@@ -823,25 +829,30 @@ h1{
 }
 
 .competitions1 li{
-    padding: 1rem 4rem;
+    padding: 2rem 4.5rem;
+}
+
+.competitions1 li a{
+    color: black;
 }
 
 .club1{
     transform: translateX(-25%);
 }
 
-.club1 li{
-    /* padding: 1rem 4rem; */
-}
 
 .club1 li a{
     display: inline-block;
     width: 100%;
     margin: 2rem 2rem;
     padding-right: 4rem;
+    color: black;
 }
 
 
+.orange{
+    color: var(--second-color)!important;
+}
 
 
 
@@ -849,9 +860,17 @@ h1{
 
 /* ----------TENNIS  OFFER-------------- */
 
+.fond-ourtennisclub{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.container{
+    margin: 18rem auto;
+}
+
 
 .section-ourclub{
-    justify-content: space-around;
+    justify-content: space-around;;
 }
 
 .section-ourclub article{
@@ -877,6 +896,11 @@ h1{
     width: 45%;
 }
 
+/* ---------------footer------------------*/
+
+.pied-page{
+    width: 70%;
+}
 
 
 }

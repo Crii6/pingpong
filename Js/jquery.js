@@ -14,6 +14,9 @@
   
     $('.club').click(function () {
       $('.club1').slideToggle(600)
+      $('.club').toggleClass('orange')
+      $('.competitions1').slideUp(600)
+      $('.competitions').removeClass('orange')
     })
   
     $('.entrainement').click(function () {
@@ -22,8 +25,20 @@
   
     $('.competitions').click(function () {
       $('.competitions1').slideToggle(600)
+      $('.competitions').toggleClass('orange')
+      $('.club1').slideUp(600)
+      $('.club').removeClass('orange')
     })
-  
+
+    $('.text-header, .container').click(function(){
+      $('.club1').slideUp(600)
+      $('.club').removeClass('orange')
+    })
+    
+    $('.text-header, .container').click(function(){
+      $('.competitions1').slideUp(600)
+      $('.competitions').removeClass('orange')
+    })
     // *************************modal****************
   
     $('#open').click(function () {
