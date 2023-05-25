@@ -338,7 +338,7 @@ hr {
 }
 
 .section-ourclub a {
-    background: linear-gradient(to left, var(--principal-color), var(--second-color) 70%);
+    background: linear-gradient(to right, var(--principal-color), var(--second-color) 70%);
     padding: 1rem 2rem;
     border-radius: 1rem;
     border: 1px solid var(--principal-color);
@@ -354,7 +354,7 @@ hr {
 
 
 .section-ourclub a:hover {
-    /* background: var(--second-color); */
+    background: var(--second-color);
     scale: 1.07;
 }
 
@@ -600,9 +600,9 @@ footer {
 }
 
 .footerback {
-    background: url('../img/stock-photo-tennis.jpg');
+    background: url('../img/photo-nb1.png');
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     filter: blur(2px);
     height: 800px;
     width: 100%;
@@ -613,7 +613,7 @@ footer {
 .pied-page {
     width: 95%;
     margin: 1rem auto;
-    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.2); */
     box-shadow: 0px 1px 10px white;
     /* border-bottom: 2rem; */
     height: 780px;
@@ -782,7 +782,7 @@ footer {
 
 .current{
     background: none;
-    color: var(--second-color);
+    color: var(--second-color)!important;
 }
 
 .sous > li a {
@@ -890,10 +890,43 @@ footer {
     width: 45%;
 }
 
+.nouveaute button,.modal button,.text-jeune{
+    display: none;
+}
+
+.modal h3{
+    text-align: center;
+}
+
+.modal {
+    color: var(--principal-color);
+    position: initial;
+    border: none;
+    border-radius: none;
+    width: 90%;
+    z-index: 2000;
+    top: initial;
+    transform: none;
+    padding: 3rem;
+    background-color: transparent;
+    line-height: 2.2rem;
+    left: initial;
+    transition: left 0.5s ease-in-out;
+    margin: auto;
+}
+
+.modal ul{
+    padding: 0 2rem ;
+}
+
+
+
+
+
 /* ---------------footer------------------*/
 
 .pied-page{
-    width: 70%;
+    width: 90%;
 }
 
 
