@@ -1,0 +1,1169 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --principal-color: #172958;
+    --second-color: #FF583B;
+}
+
+/* ***************************loader*******************/
+
+/* 
+.mycanvas{
+    background-color: #101d29;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s linear;
+}
+
+.canvadisparait{
+    opacity: 0;
+}
+
+.ball{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 0.9s infinite;
+    transition: scale 5s, opacity 5s step-end;
+    z-index: 1;
+}
+
+.disparait{
+    scale: 100;
+    opacity: 0;
+    z-index: -20;
+}
+
+@keyframes bounce{
+    10%{
+        height: 50px;
+        width: 50px;
+    }
+    30%{
+        height: 50px;
+        width: 45px;
+    }
+    50%{
+        height: 45px;
+        width: 55px;
+        transform: translateY(240px);
+    }
+    75%{
+        height: 50px;
+        width: 50px;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.containerloader{
+    width: 57px;
+    height: 50px;
+}
+
+
+.shadow{
+    background-color: rgba(8,8,8,1);
+    height: 10px;
+    width: 65px;
+    border-radius: 50%;
+    position: relative;
+    top: 225px;
+    z-index: 0;
+    animation: shrink 0.9s infinite;
+    padding: 0;
+}
+
+@keyframes shrink{
+    50%{
+        transform: scaleX(0.5);
+    }
+}
+
+.contenu{
+    opacity: 0;
+    transition: opacity 1.7s linear;
+}
+
+.contenuapparait{
+    opacity: 1;
+} */
+
+
+
+/* ************************HEADER********************* */
+
+#back {
+    background: url('../img/Photo-concours.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: background-image 0.3s linear;
+    transition: transform 0.2s ease-in-out;
+    animation: kenburns 20s infinite alternate;
+    overflow: hidden;
+    left: 0;
+}
+
+
+
+.max-back {
+    height: 700px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+@keyframes kenburns {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+        
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.wrapper {
+    color: white;
+    width: 100%;
+    height: 700px;
+}
+
+
+
+.navigation-principal img {
+    width: 150px;
+    margin-top: 1rem; 
+    /* margin-left: 2rem; */
+}
+
+
+.logo-nav div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 1.5s ease-out;
+   
+}
+
+
+.logo-nav i {
+    cursor: pointer;
+    margin-left: 15%;
+}
+
+.nav-scroll{
+    background-color: rgba(0,0,0,0.9);
+    /* border-radius: 5rem; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+}
+
+/*----------------------navigation------------------------*/
+
+.fa-solid:before {
+    font-family: FontAwesome;
+    content: '\f0c9';
+}
+
+.cross:before {
+    font-family: FontAwesome;
+    content: '\f00d';
+    padding: 0.2rem;
+}
+
+.fa-solid,
+.cross {
+    font-size: 3rem;
+    color: var(--second-color);
+}
+
+.nav-bar {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+    top:5%;
+    transition: top 1s ease-in-out;
+}
+
+.nav-bar-scroll{
+    position: fixed;
+    top: 3.7%;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.wrapper a {
+    text-decoration: none;
+}
+
+.sous {
+    padding: 0;
+}
+
+.sous>li {
+    background-color: white;
+    border-radius: 0.5rem;
+    color: black
+}
+.current {
+    background-color: var(--principal-color);
+    color: white!important;
+    border-radius: 0.5rem;
+}
+
+.sous li>a {
+    display: block;
+    padding: 1.5rem 2rem;
+    margin-top: 0rem;
+    color: black;
+}
+
+
+.sous a:hover {
+    color: var(--second-color);
+}
+
+.icon:after {
+    font-family: FontAwesome;
+    content: '\f107';
+    margin-left: 1rem;
+}
+
+.sous-menu2 {
+    display: none;
+}
+
+
+
+/* -------------------text bienvenue---------------------------- */
+
+.text-header {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    animation: left 1.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    height: 550px;
+}
+
+@keyframes left {
+    0% {
+        left: -100%
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+
+.text-header p {
+    font-size: 1.2rem;
+}
+
+.text-header a {
+    background: linear-gradient(to right, var(--principal-color), var(--second-color) 70%);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-top: 2rem;
+    color: white;
+
+}
+
+
+
+
+/* ****************************OUR TENNIS CLUB OFFER********************************* */
+
+.fond-ourtennisclub {
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 2rem 1.5rem 5rem;
+}
+
+
+.ourtennisclub p:first-child {
+    color: var(--second-color)
+}
+
+.text-header,.pied-page,.navigation-principal{
+    max-width: 1200px;
+}
+
+.container {
+    margin: 4rem auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.ourtennisclub {
+    text-align: center;
+    display: block;
+}
+
+.section-ourclub img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 5px 5px 15px black;
+}
+
+.section-ourclub h3 {
+    color: var(--second-color);
+    font-size: 2.2rem;
+}
+
+.section-ourclub article {
+    text-align: center;
+}
+
+.section-ourclub p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    color: var(--principal-color);
+    text-shadow: 1px 0px 1px var(--principal-color);
+}
+
+
+.animation-1 , .animation-2{
+    opacity: 0;
+    transition: opacity 1.5s linear;
+    width: 240px;
+    height: 240px;
+    margin: auto;
+}
+
+
+.rotateInUpRight {
+    animation-name: rotateInUpRight;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+.rotateInDownRight {
+    animation-name: rotateInDownRight;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+@keyframes rotateInUpRight {
+    0% {
+        transform-origin: right bottom;
+        transform: rotate3d(0, 0, 1, -90deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform-origin: right bottom;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes rotateInDownRight {
+    0% {
+        transform-origin: right bottom;
+        transform: rotate3d(0, 0, 1, 45deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform-origin: right bottom;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+hr {
+    margin: 7rem auto 5rem;
+    width: 80%;
+}
+
+.boutton-inscription{
+    text-align: center;
+}
+
+.boutton-inscription h3{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.section-ourclub a {
+    background: linear-gradient(to right, var(--principal-color), var(--second-color) 70%);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid var(--principal-color);
+    display: inline-block;
+    margin-top: 2rem;
+    color: white;
+    text-decoration: none;
+    margin-top: 4rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+
+.section-ourclub a:hover {
+    background: var(--second-color);
+    scale: 1.07;
+}
+
+/* ****************************DERNIERE INFOS********************************* */
+
+
+
+.section-nouveaute h2 {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 8rem;
+    text-transform:uppercase;
+    color: var(--principal-color)
+
+}
+
+.section-nouveaute article {
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-top: 4rem;
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px black;
+
+}
+
+.section-nouveaute img {
+    width: 100%;
+}
+
+.nouveaute div {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 1rem;
+}
+
+.nouveaute img {
+    width: 80%;
+    max-height: 100%;
+}
+
+.nouveaute {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 8rem 0;
+}
+
+.nouveaute h3,
+.nouveaute p {
+    width: 90%;
+    margin: auto;
+}
+
+.nouveaute h3 {
+    color: var(--second-color);
+    margin: 0 auto 2rem;
+}
+
+.nouveaute p {
+    font-size: 1.5rem;
+    color: var(--principal-color);
+    margin-top: 4rem;
+}
+
+.slider {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.slider img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    max-height: 350px;
+    width: 100%;
+    object-fit:cover;
+}
+
+.nouveaute date {
+    font-size: 1.2rem;
+}
+
+.nouveaute ul {
+    text-align: left;
+}
+
+.nouveaute li {
+    color: var(--principal-color);
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    width: 90%;
+    list-style: none;
+}
+
+.lien-classement{
+    background: var(--principal-color);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    color: white;
+    text-decoration: none;
+    width: 70%;
+    transition: scale 0.2s ease-in-out;
+}
+
+.lien-classement:hover{
+    scale: 1.1;
+}
+
+/* ------------------modal box----------------- */
+
+
+.nouveaute button {
+    width: 40%;
+    margin: auto;
+    display: block;
+    margin-top: 2rem;
+    background: linear-gradient(90deg, var(--principal-color) 40%, var(--second-color) 95%);
+    border: 0;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    transition: background 1s ease-in-out;
+    background-size: 200% 100%;
+    background-position: right;
+    box-shadow: 0px 1px 10px black;
+}
+
+.nouveaute button.reverse {
+    background-position: left;
+}
+
+
+.modal button {
+    width: 90%;
+    margin: auto;
+    display: block;
+    margin-top: 5rem;
+    background: linear-gradient(to right, var(--principal-color), var(--second-color) 70%);
+    border: 0;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+}
+
+
+
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    overflow: auto;
+    display: none;
+}
+
+.overlay.visible {
+    display: block;
+}
+
+
+.modal {
+    color: var(--principal-color);
+    position: fixed;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 90%;
+    z-index: 2000;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem;
+    background-color: white;
+    line-height: 2.2rem;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
+}
+
+.modal.visible {
+    left: 50%;
+}
+
+.modal h3 {
+    color: var(--second-color);
+}
+
+.modal p {
+    margin: 4rem 0;
+}
+
+.modal li {
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.modal li:before {
+    font-family: FontAwesome;
+    content: '\f005';
+    color: rgb(182, 41, 41);
+    margin-left: -2.2rem
+}
+
+.animation-droite {
+    opacity: 0;
+    transition: opacity 1.5s linear;
+}
+
+.animation-gauche {
+    opacity: 0;
+    transition: opacity 1.5s linear;
+}
+
+.right {
+    position: relative;
+    animation-name: right;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+.left {
+    position: relative;
+    animation-name: left;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+
+
+@keyframes right {
+    0% {
+        right: -100%;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0%;
+        opacity: 1;
+    }
+}
+
+
+/* ************************************************CLICK PHOTO************************************************** */
+
+.img-modal {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .img-modal:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal-photo {
+    display: none; /*Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 95%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  .slider-container {
+    width: 100%; /* Ajustez la largeur du slider-container selon vos besoins */
+    max-width: 800px; /* Définissez une largeur maximale pour limiter la taille des images */
+    margin: 0 auto; /* Centrez horizontalement le slider-container */
+  }
+  
+  .slider-img {
+    width: 100%; /* Utilisez la largeur de 100% pour que les images occupent toute la largeur du slider-container */
+    height: auto; /* Assurez-vous que la hauteur est automatiquement calculée pour maintenir les proportions */
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content{
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close-photo {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close-photo:hover,
+  .close-photo:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+
+
+
+
+
+/* ****************************************FOOTER***********************************/
+
+footer {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.footerback {
+    background: url('../img/photo-nb3.png');
+    background-position: right;
+    background-size:cover;
+    filter: blur(2px);
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    /* border-radius: 2rem; */
+}
+.pied-page {
+    width: 95%;
+    margin: 1rem auto;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px 1px 10px white;
+    /* border-bottom: 2rem; */
+    height: 780px;
+}
+
+.logo-mornant img {
+    width: 200px;
+}
+.logo-mornant {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.footer-list h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.footer-list {
+    text-align: center;
+    border-top: 1px solid rgb(133, 133, 133);
+    width: 60%;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+.footer-list ul{
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+    color: var(--second-color);
+}
+
+.footer-list a{
+    color: var(--second-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.icon-footer{
+    text-align: center;
+    border-top: 1px solid rgb(133, 133, 133);
+    width: 60%;
+    margin: auto;
+}
+
+.icon-footer a{
+    font-size: 4rem;
+    display: inline-block;
+    color: white;
+    padding: 3rem 0;
+}
+
+.partenaire h3{
+    border-top: 1px solid rgb(133, 133, 133);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 3rem 0;
+    color: rgb(255, 255, 255);
+}
+
+
+.partenaire img {
+    width: 70px;
+}
+
+
+
+
+
+/* **********************************************************************************************************************
+**********************************************MEDIA QUERY****************************************************
+********************************************************************************************************************** */
+
+
+/* ***************************TABLETTE********************* */
+
+@media screen and (min-width: 780px){
+
+
+/* ----------TENNIS  OFFER-------------- */
+
+
+.section-ourclub{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-ourclub article{
+    width: 45%;
+    margin-top: 3rem;
+}
+
+.section-ourclub p{
+    width: 90%;
+    margin: auto;
+}
+
+.boutton-inscription{
+    margin-top:3rem;
+}
+
+/* ----------derniere infos-------------- */
+
+
+}
+
+/* ***************************DESKTOP********************* */
+
+
+@media screen and (min-width: 1100px){
+
+
+.max-back{
+    height: 830px
+}
+
+/* -------------nav------------- */
+
+.navigation-principal img{
+    width: 200px;
+}
+
+.fa-solid:before {
+    content: none;
+}
+
+.cross:before {
+    content: none;
+}
+
+
+.nav-scroll{
+    position: relative;
+    background: none;
+}
+
+.navigation-principal{
+    display: flex;
+    margin: auto;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.nav-bar{
+    display: flex;
+    position:initial;
+    justify-content: flex-end;
+}
+
+.sous{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    align-items: center;
+    position: relative;
+}
+
+.sous > li{
+    background: none;
+    position: relative;;
+}
+
+.current{
+    background: none;
+    color: var(--second-color)!important;
+}
+
+.sous > li a {
+    display: block;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.color-white{
+    color: white;
+}
+
+.sous-menu2 li{
+    background-color: white;
+}
+
+
+
+.sous-menu2 li:first-child{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.sous-menu2 li:last-child{
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+
+
+
+.sous-menu2{
+    position: absolute;
+    padding: 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.competitions1 li{
+    padding: 2rem 4.5rem;
+}
+
+.competitions1 li a{
+    color: black;
+}
+
+.club1{
+    transform: translateX(-25%);
+}
+
+
+.club1 li a{
+    display: inline-block;
+    width: 100%;
+    margin: 2rem 2rem;
+    padding-right: 4rem;
+    color: black;
+}
+
+
+.orange{
+    color: var(--second-color)!important;
+}
+
+
+.text-header h1{
+    font-size: 5rem;
+}
+
+.text-header p{
+    font-size: 1.5rem;
+}
+
+
+/* ----------TENNIS  OFFER-------------- */
+
+.fond-ourtennisclub{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.container{
+    margin: 18rem auto;
+}
+
+
+.section-ourclub{
+    justify-content: space-around;;
+}
+
+.section-ourclub article{
+    width: 24%;
+}
+
+.section-ourclub p{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* ----------derniere infos-------------- */
+
+.section-nouveaute{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-nouveaute article{
+    width: 45%;
+    box-shadow: 0px 0px 2px black;
+}
+
+.nouveaute button,.modal button,.text-jeune > h3, .text-jeune > p, .text-jeune > button{
+    display: none;
+}
+
+.text-jeune{
+    padding: 0;
+}
+
+.modal h3{
+    text-align: center;
+}
+
+.modal {
+    color: var(--principal-color);
+    position: initial;
+    border: none;
+    border-radius: none;
+    width: 90%;
+    z-index: 2000;
+    top: initial;
+    transform: none;
+    padding: 3rem;
+    background-color: transparent;
+    line-height: 2.2rem;
+    left: initial;
+    transition: left 0.5s ease-in-out;
+    margin: 0 auto;
+}
+
+.modal ul{
+    padding: 0 2rem ;
+}
+
+
+
+
+
+/* ---------------footer------------------*/
+
+.pied-page{
+    width: 90%;
+}
+
+/* .footerback{
+    background: url('../img/photo-nb3.png');
+    background-size: cover;
+    background-position:right; */
+/* } */
+
+
+}
+
+
+@media screen and (min-height: 1150px){
+
+
+    .max-back{
+        height: 1100px;
+    }
+    .container{
+        margin-top: 45rem;
+    }
+
+    .footerback{
+        height: 1100px;
+    }
+}
