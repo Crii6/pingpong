@@ -1,3 +1,20 @@
+// **********************************loader*************************
+
+// ball = document.getElementById('ball');
+// canva = document.getElementById('mycanvas')
+// contenu = document.getElementById('contenu')
+
+// function zoom(){
+//     ball.style.animation = "none";
+//     ball.classList.add('disparait');
+//     canva.classList.add('canvadisparait')
+// }
+// function apparaitloader(){
+//   contenu.classList.add('contenuapparait')
+// }
+
+// setInterval(zoom, 2000)
+// setInterval(apparaitloader, 2500)
 
 
 // ******************************Navigation au scroll******************************
@@ -110,7 +127,7 @@ const droite = document.querySelectorAll('.animation-droite')
 const obsOpt = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.4 // Pourcentage de visibilité nécessaire pour déclencher l'animation
+  threshold: 0.3 // Pourcentage de visibilité nécessaire pour déclencher l'animation
 };
 
 const obserright = new IntersectionObserver(apparaitdroite, obsOpt);
@@ -139,7 +156,7 @@ const gauche = document.querySelectorAll('.animation-gauche')
 const obsOptleft = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.4 // Pourcentage de visibilité nécessaire pour déclencher l'animation
+  threshold: 0.3 // Pourcentage de visibilité nécessaire pour déclencher l'animation
 };
 
 const obserleft = new IntersectionObserver(apparaitgauche, obsOptleft);
@@ -157,25 +174,37 @@ gauche.forEach(section => {
 
 
 // **************************************************modal photo*****************************************
-
-
-// Get the modal
 var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName("img-modal");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+var sliderContainer = document.querySelector(".slider-container");
+var images2 = document.querySelectorAll(".img-modal");
+
+
+
+
+images2.forEach(function(img) {
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+
+
+   
+
+
+}});
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close-photo")[0];
+
+modal.onclick = function(){
+  modal.style.display = "none"
+}
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+

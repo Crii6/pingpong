@@ -17,6 +17,100 @@ body {
     --second-color: #FF583B;
 }
 
+/* ***************************loader*******************/
+
+/* 
+.mycanvas{
+    background-color: #101d29;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s linear;
+}
+
+.canvadisparait{
+    opacity: 0;
+}
+
+.ball{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 0.9s infinite;
+    transition: scale 5s, opacity 5s step-end;
+    z-index: 1;
+}
+
+.disparait{
+    scale: 100;
+    opacity: 0;
+    z-index: -20;
+}
+
+@keyframes bounce{
+    10%{
+        height: 50px;
+        width: 50px;
+    }
+    30%{
+        height: 50px;
+        width: 45px;
+    }
+    50%{
+        height: 45px;
+        width: 55px;
+        transform: translateY(240px);
+    }
+    75%{
+        height: 50px;
+        width: 50px;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.containerloader{
+    width: 57px;
+    height: 50px;
+}
+
+
+.shadow{
+    background-color: rgba(8,8,8,1);
+    height: 10px;
+    width: 65px;
+    border-radius: 50%;
+    position: relative;
+    top: 225px;
+    z-index: 0;
+    animation: shrink 0.9s infinite;
+    padding: 0;
+}
+
+@keyframes shrink{
+    50%{
+        transform: scaleX(0.5);
+    }
+}
+
+.contenu{
+    opacity: 0;
+    transition: opacity 1.7s linear;
+}
+
+.contenuapparait{
+    opacity: 1;
+} */
+
+
 
 /* ************************HEADER********************* */
 
@@ -248,9 +342,9 @@ body {
 }
 
 .section-ourclub img {
-    max-width: 240px;
     width: 100%;
-    height: 240px;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
     border: 8px solid white;
     box-shadow: 5px 5px 15px black;
@@ -273,15 +367,14 @@ body {
 }
 
 
-.animation-1 {
+.animation-1 , .animation-2{
     opacity: 0;
     transition: opacity 1.5s linear;
+    width: 240px;
+    height: 240px;
+    margin: auto;
 }
 
-.animation-2 {
-    opacity: 0;
-    transition: opacity 1.5s linear;
-}
 
 .rotateInUpRight {
     animation-name: rotateInUpRight;
@@ -397,7 +490,7 @@ hr {
 
 .nouveaute img {
     width: 80%;
-    height: 100%;
+    max-height: 100%;
 }
 
 .nouveaute {
@@ -431,9 +524,13 @@ hr {
     border-top-right-radius: 20px;
 }
 
+
 .slider img {
-    border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    max-height: 350px;
+    width: 100%;
+    object-fit:cover;
 }
 
 .nouveaute date {
@@ -452,8 +549,19 @@ hr {
     list-style: none;
 }
 
-.lien-classement {
-    color: var(--second-color)
+.lien-classement{
+    background: var(--principal-color);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    color: white;
+    text-decoration: none;
+    width: 70%;
+    transition: scale 0.2s ease-in-out;
+}
+
+.lien-classement:hover{
+    scale: 1.1;
 }
 
 /* ------------------modal box----------------- */
@@ -618,7 +726,7 @@ hr {
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 95%;
     max-width: 700px;
   }
   
@@ -632,6 +740,17 @@ hr {
     color: #ccc;
     padding: 10px 0;
     height: 150px;
+  }
+
+  .slider-container {
+    width: 100%; /* Ajustez la largeur du slider-container selon vos besoins */
+    max-width: 800px; /* Définissez une largeur maximale pour limiter la taille des images */
+    margin: 0 auto; /* Centrez horizontalement le slider-container */
+  }
+  
+  .slider-img {
+    width: 100%; /* Utilisez la largeur de 100% pour que les images occupent toute la largeur du slider-container */
+    height: auto; /* Assurez-vous que la hauteur est automatiquement calculée pour maintenir les proportions */
   }
   
   /* Add Animation - Zoom in the Modal */
@@ -684,8 +803,8 @@ footer {
 }
 
 .footerback {
-    background: url('../img/photo-nb1.png');
-    background-position: center;
+    background: url('../img/photo-nb3.png');
+    background-position: right;
     background-size:cover;
     filter: blur(2px);
     height: 800px;
@@ -933,7 +1052,13 @@ footer {
 }
 
 
+.text-header h1{
+    font-size: 5rem;
+}
 
+.text-header p{
+    font-size: 1.5rem;
+}
 
 
 /* ----------TENNIS  OFFER-------------- */
@@ -972,10 +1097,15 @@ footer {
 
 .section-nouveaute article{
     width: 45%;
+    box-shadow: 0px 0px 2px black;
 }
 
-.nouveaute button,.modal button,.text-jeune{
+.nouveaute button,.modal button,.text-jeune > h3, .text-jeune > p, .text-jeune > button{
     display: none;
+}
+
+.text-jeune{
+    padding: 0;
 }
 
 .modal h3{
@@ -996,7 +1126,7 @@ footer {
     line-height: 2.2rem;
     left: initial;
     transition: left 0.5s ease-in-out;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .modal ul{
@@ -1013,5 +1143,27 @@ footer {
     width: 90%;
 }
 
+/* .footerback{
+    background: url('../img/photo-nb3.png');
+    background-size: cover;
+    background-position:right; */
+/* } */
 
+
+}
+
+
+@media screen and (min-height: 1150px){
+
+
+    .max-back{
+        height: 1100px;
+    }
+    .container{
+        margin-top: 45rem;
+    }
+
+    .footerback{
+        height: 1100px;
+    }
 }
