@@ -1,21 +1,26 @@
 // **********************************loader*************************
 
-// ball = document.getElementById('ball');
-// canva = document.getElementById('mycanvas')
-// contenu = document.getElementById('contenu')
+ball = document.getElementById('ball');
+canva = document.getElementById('mycanvas')
+contenu = document.getElementById('contenu')
 
-// function zoom(){
-//     ball.style.animation = "none";
-//     ball.classList.add('disparait');
-//     canva.classList.add('canvadisparait')
-// }
-// function apparaitloader(){
-//   contenu.classList.add('contenuapparait')
-// }
+function zoom(){
+    ball.style.animation = "none";
+    ball.classList.add('disparait');
+    contenu.style.display = "block"
+  }
+  function apparaitloader(){
+  canva.classList.add('canvadisparait')
+  contenu.classList.add('contenuapparait')
+}
+
+function bye(){
+  canva.style.display = 'none'
+}
 
 // setInterval(zoom, 2000)
 // setInterval(apparaitloader, 2500)
-
+// setInterval(bye, 4000)
 
 // ******************************Navigation au scroll******************************
 window.addEventListener('scroll', function() {
