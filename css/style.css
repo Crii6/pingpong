@@ -27,6 +27,7 @@ body {
     height: calc(50px * 2);
     position: relative;
     animation: rotate 5s linear infinite;
+    scale: 1.5;
 }
   
   @keyframes rotate {
@@ -56,7 +57,7 @@ body {
     
     
     .ball:nth-child(1) {
-        background: #740d0d;
+        background: #bb1515;
     position: absolute;
     top: 0;
     left: 0;
@@ -127,7 +128,7 @@ body {
   }
   
   .mycanvas{
-    background-color: #3854e0;
+    background-color: #5465fd;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -141,7 +142,7 @@ body {
   }
 
   .trait{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     height: 100vh;
     width: 5px;
     position: absolute;
@@ -162,7 +163,7 @@ body {
   }
 
 .filet{
-    border-top: 3px solid white;
+    border-top: 3px solid rgba(255, 255, 255, 0.7);
     width: 100%;
     position: absolute;
 }
