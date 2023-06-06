@@ -1,26 +1,32 @@
 // **********************************loader*************************
 
-ball = document.getElementById('ball');
-canva = document.getElementById('mycanvas')
-contenu = document.getElementById('contenu')
+window.addEventListener('load', (event) => {
 
-function zoom(){
-    ball.style.animation = "none";
+  document.body.classList.remove('clean-transition')
+  ball = document.getElementById('ball');
+  canva = document.getElementById('mycanvas')
+  contenu = document.getElementById('contenu')
+
+  function zoom(){
     ball.classList.add('disparait');
     contenu.style.display = "block"
-  }
+    ball.style.animation = "none";
+    }
+
   function apparaitloader(){
-  canva.classList.add('canvadisparait')
-  contenu.classList.add('contenuapparait')
-}
+    canva.classList.add('canvadisparait')
+    contenu.classList.add('contenuapparait')
+  }
+  
+  function bye(){
+    canva.style.display = 'none'
+  }
 
-function bye(){
-  canva.style.display = 'none'
-}
+  setInterval(zoom,1490)
+  setInterval(apparaitloader, 2000)
+  setInterval(bye, 3500)
 
-// setInterval(zoom, 2000)
-// setInterval(apparaitloader, 2500)
-// setInterval(bye, 4000)
+})
 
 // ******************************Navigation au scroll******************************
 window.addEventListener('scroll', function() {
