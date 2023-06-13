@@ -4,7 +4,7 @@
 $(document).ready(function () {
     $('.slider').slick({
       autoplay: true,
-      autoplayspeed: 2000,
+      autoplaySpeed: 9000,
     });
   });
   
