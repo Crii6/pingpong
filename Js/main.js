@@ -13,7 +13,7 @@ window.addEventListener('load', (event) => {
     ball.style.backgroundColor = "rgba(220,220,220,1)"
     container.style.animationPlayState = 'paused';
     ball.style.animationPlayState = "paused";
-    // ball.style.animation = "none";
+    ball.style.animation = "none";
   }
   
   
@@ -27,9 +27,9 @@ window.addEventListener('load', (event) => {
     canva.style.display = 'none'
   }
 
-  // setInterval(zoom,1450)
-  // setInterval(apparaitloader, 2150)
-  // setInterval(bye, 2700)
+  setInterval(zoom,1490)
+  setInterval(apparaitloader, 2190)
+  setInterval(bye, 2740)
 
 })
 

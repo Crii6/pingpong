@@ -30,7 +30,7 @@ body {
 /* ***************************loader*******************/
 
 
-
+/* 
 .containerloader {
    width: calc(50px * 2);
    height: calc(50px * 2);
@@ -199,10 +199,11 @@ body {
   }
   
   .disparait{
-    scale: 100;
-    /* opacity: 0; */
-    /* z-index: -20;  */
+    scale:100;
+    
 }
+
+ */
 
 
 
@@ -375,9 +376,8 @@ body {
     animation: left 1.2s ease-in-out;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-    height: 550px;
+    justify-content: space-evenly;
+    height: 650px;
 }
 
 @keyframes left {
@@ -395,15 +395,24 @@ body {
     font-size: 1.2rem;
 }
 
-.text-header a {
+.text-header a{
     background: linear-gradient(to right, var(--principal-color), var(--second-color) 70%);
     padding: 1rem 2rem;
     border-radius: 1rem;
     display: inline-block;
     margin-top: 2rem;
     color: white;
-
+    margin-bottom: 2rem;
 }
+
+.header-lien{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
 
 
 
@@ -965,7 +974,13 @@ footer {
     padding: 3rem 0;
 }
 
-.partenaire h3{
+.partenaire{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-titre-partenaire{
     border-top: 1px solid rgb(133, 133, 133);
     width: 60%;
     margin: auto;
@@ -976,7 +991,7 @@ footer {
 
 
 .partenaire img {
-    width: 70px;
+    width: 100px;
 }
 
 
@@ -986,6 +1001,28 @@ footer {
 /* **********************************************************************************************************************
 **********************************************MEDIA QUERY****************************************************
 ********************************************************************************************************************** */
+
+/* ***************************GRAND MOBILE********************* */
+
+@media screen and (min-width: 425px){
+    
+    .header-lien{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+
+
+
+}
+
+
+
+
+
+
+
 
 
 /* ***************************TABLETTE********************* */
