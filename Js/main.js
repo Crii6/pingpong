@@ -27,9 +27,9 @@ window.addEventListener('load', (event) => {
     canva.style.display = 'none'
   }
 
-  setInterval(zoom,1450)
-  setInterval(apparaitloader, 2150)
-  setInterval(bye, 2700)
+  // setInterval(zoom,1450)
+  // setInterval(apparaitloader, 2150)
+  // setInterval(bye, 2700)
 
 })
 

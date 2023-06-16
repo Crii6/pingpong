@@ -154,30 +154,34 @@ body {
     
     .trait{
         background-color: rgba(255, 255, 255, 0.8);
-        height: 100vh;
-        width: 5px;
+        width: 100%;
+        border: 2px solid white;
         position: absolute;
         box-shadow: 5px 5px 11px rgb(11, 18, 91);
     }
     
-    .bord{
+    .filet{
         border: 10px solid black;
         border-radius: 50%;
-        bottom: 0;
-        position: absolute
-    }
-    .bord2{
-        border: 10px solid black;
-        border-radius: 50%;
-        top: 0;
+        left: 0;
         position: absolute;
+    }
+    .filet2{
+        border: 10px solid black;
+        border-radius: 50%;
+        right: 0;
+        position: absolute;
+    }
+
+
+
+    .bord2{
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        height: 100vh;
+        position: absolute;
+        
     }
     
-    .filet{
-        border-top: 3px solid rgba(255, 255, 255, 0.7);
-        width: 100%;
-        position: absolute;
-    }
     
     
     .contenu{
@@ -988,6 +992,30 @@ footer {
 
 @media screen and (min-width: 780px){
 
+/* ----------------LOADER---------------- */
+
+
+.trait{
+    height: 100vh;
+    width: 5px;
+}
+
+.filet{
+    bottom: 0;
+    left: initial;
+}
+.filet2{
+    top: 0;
+    right: initial;
+}
+
+
+.bord2{
+    width: 100%;
+    height: initial;
+}
+
+
 
 /* ----------TENNIS  OFFER-------------- */
 
@@ -1026,6 +1054,8 @@ footer {
 .max-back{
     height: 830px
 }
+
+
 
 /* -------------nav------------- */
 
