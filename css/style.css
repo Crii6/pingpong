@@ -30,7 +30,7 @@ body {
 /* ***************************loader*******************/
 
 
-.containerloader {
+/* .containerloader {
    width: calc(50px * 2);
    height: calc(50px * 2);
    position: relative;
@@ -200,7 +200,7 @@ body {
   .disparait{
     scale:100;
     
-}
+} */
 
  
 
@@ -309,13 +309,13 @@ body {
     position: absolute;
     width: 100%;
     z-index: 20;
-    top:5%;
+    top:50px;
     transition: top 1s ease-in-out;
 }
 
 .nav-bar-scroll{
     position: fixed;
-    top: 3.7%;
+    top: 40px;
 }
 
 .nav-bar li {
@@ -362,6 +362,7 @@ body {
 .sous-menu2 {
     display: none;
 }
+
 
 
 
