@@ -27,6 +27,30 @@ body {
     transition: none!important;
 }
 
+
+body {
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #ad7979;
+    --sb-size: 6px;
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size) 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+    
+    }
+
 /* ***************************loader*******************/
 
 
@@ -346,12 +370,14 @@ body {
     padding: 1.5rem 2rem;
     margin-top: 0rem;
     color: black;
+    
 }
 
 
-.sous a:hover {
+.sous a:hover{
     color: var(--second-color);
 }
+  
 
 .icon:after {
     font-family: FontAwesome;
@@ -735,7 +761,11 @@ hr {
     line-height: 2.2rem;
     left: -100%;
     transition: left 0.5s ease-in-out;
+    max-height: 95vh;
+    overflow-y: scroll;
 }
+
+
 
 .modal.visible {
     left: 50%;
@@ -1136,9 +1166,8 @@ footer {
 
 .sous > li{
     background: none;
-    position: relative;;
+    position: relative;
 }
-
 .current{
     background: none;
     color: var(--second-color)!important;
@@ -1149,6 +1178,19 @@ footer {
     padding: 0;
     font-weight: bold;
     color: white;
+    border: 3px solid;
+    -webkit-mask: 
+      /* conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+       var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat, */
+      conic-gradient(at bottom 2px left  2px,  #0000 90deg,#000 0)
+       0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+      linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+}
+
+.sous a:hover {
+    --_i: 100%;
+    transition: .3s, -webkit-mask-size .3s .3s;
 }
 
 .color-white{
@@ -1283,6 +1325,7 @@ footer {
     left: initial;
     transition: left 0.5s ease-in-out;
     margin: 0 auto;
+    overflow: initial;
 }
 
 .modal ul{
