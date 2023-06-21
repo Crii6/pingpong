@@ -1178,18 +1178,19 @@ footer {
     padding: 1rem;
     font-weight: bold;
     color: white;
-    border: 3px solid;
     border-radius: 1rem;
+    border: 3px solid transparent;
     -webkit-mask: 
     conic-gradient(at top 0px right 0px, #0000 90deg,#000 0)
     var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
     conic-gradient(from 180deg at bottom 0px left  0px,  #0000 90deg,#000 0)
     0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
-      linear-gradient(#000 0 0) padding-box no-repeat;
+    linear-gradient(#000 0 0) padding-box no-repeat;
     transition: .3s, -webkit-mask-position .3s .3s; 
 }
 
 .sous a:hover {
+    border: 3px solid;
     --_i: 100%;
     transition: .3s, -webkit-mask-size .3s .3s;
 }
