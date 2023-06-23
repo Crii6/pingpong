@@ -1234,17 +1234,17 @@ footer {
 }
 
 .club1{
-    transform: translateX(-25%);
+    transform: translateX(-20%);
 }
 
 .club1 li{
-    padding-right: 4rem;
+    padding-right: 2.3rem;
 }
 
 .club1 li a{
     display: inline-block;
     width: 100%;
-    margin: 2rem 2rem;
+    margin: 2rem 1rem;
     color: black;
 }
 
@@ -1379,4 +1379,54 @@ footer {
     .footerback{
         height: 1100px;
     }
+}
+
+
+
+
+
+
+/* 
+**********************************************************************************************************************************
+**************************************************PAGE ENTRAINEMENTS**************************************************************
+********************************************************************************************************************************** */
+
+
+
+/* ************************image background header********************* */
+
+#entrnmt-back{
+    background: url('../img/pexels-magda-ehlers-4080060.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    left: 0;
+}
+
+.entrnmt-max-back {
+    height: 400px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.entrnmt-text-header{
+    margin: auto;
+    width: 90%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+}
+
+.entrnmt-wrapper{
+    height: 400px;
 }
