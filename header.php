@@ -25,7 +25,7 @@
 </head>
 
 <body class="clean-transition">
-    <div class="mycanvas" id="mycanvas">
+    <!-- <div class="mycanvas" id="mycanvas">
         <div class="trait"></div>
         <div class="filet"></div>
         <div class="filet2"></div>
@@ -39,7 +39,7 @@
             <div class="ball"></div>
             
           </div>
-    </div>
+    </div> -->
 
     <div class="contenu" id="contenu">
       
@@ -57,13 +57,13 @@
                 </div>
                 <nav class="nav-bar" id="nav">
                     <ul class="sous">
-                        <li><a href="#" class="current">Accueil</a></li>
+                        <li ><a href="#" class="current">Accueil</a></li>
                         <li ><a href="javascript:void(0)" class="icon club color-white">Le club</a>
                             <ul class="sous-menu2 club1">
-                                <li><a href="#">Nous rejoindre</a></li>
+                                <li><a href="entrainement.html">Entraînements</a></li>
                                 <li><a href="#">Historique</a></li>
                                 <li><a href="#">Inscription</a></li>
-                                <li><a href="#">Nous contacter</a></li>
+                                <li><a href="contact.html">Nous contacter</a></li>
                             </ul>
                         </li>
                         <!-- <li><a href="#" class="icon entrainement">Les entrainements</a>
@@ -96,7 +96,7 @@
                         necessitatibus nisi velit iu, aperiam cumque officia mnima!</p>
                     </div>
                     <div class="header-lien">
-                        <a href="#infos">Dernière infos</a>
+                        <a href="#infos">Dernières infos</a>
                         <a href="calendrier.html" class="header-calendrier">Calendrier 2023/2024</a>
                     </div>
                 </div>

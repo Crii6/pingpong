@@ -44,23 +44,23 @@
     <div class="contenu" id="contenu">
       
 
-        <header class="wrapper entrnmt-wrapper" id="test">
-            <div class="entrnmt-max-back">
-                <div id="entrnmt-back"></div>
+        <header class="wrapper contact-wrapper" id="test">
+            <div class="contact-max-back">
+                <div id="contact-back"></div>
             </div>
             <div class="navigation-principal">
                 <div class="logo-nav">
                     <div id="logo-nav">
-                        <a href="#"><img src="img\logo-tt-color.png" alt="Logo as mornant"></a>
+                        <a href="index.html"><img src="img\logo-tt-color.png" alt="Logo as mornant"></a>
                         <i class="fa-solid test"></i>
                     </div>
                 </div>
                 <nav class="nav-bar" id="nav">
                     <ul class="sous">
-                        <li><a href="index.html">Accueil</a></li>
+                        <li ><a href="index.html">Accueil</a></li>
                         <li ><a href="javascript:void(0)" class="icon club color-white current">Le club</a>
                             <ul class="sous-menu2 club1">
-                                <li><a href="#">Entraînement</a></li>
+                                <li><a href="entrainement.html">Entraînements</a></li>
                                 <li><a href="#">Historique</a></li>
                                 <li><a href="#">Inscription</a></li>
                                 <li><a href="contact.html">Nous contacter</a></li>
@@ -90,52 +90,60 @@
             </div>
                 <div class="entrnmt-text-header">
                     
-                    <h1><strong>Les entraînements</strong></h1>
+                    <h1>Nous contacter</h1>
                     
-                    
-            </div>
-        </header>
-            <main class="container entrnmt-container">
+                </div>
+            </header>
+            <main class="container">
 
-                <section class="section-nouveaute">
+                <section class="contact">
+                    <article class="contact-gymnase">
 
-                    
-                    <article class="animation-droite entrnmt-article">
                         
-                        <div class="nouveaute">
-                            <div class="logo-raquette-nouveaute">
-                                <img src="img/raq-tt-color.png" alt="logo-raquette">
+                        <div class="contact-adresse">
+                            <img src="img/gymnase.png" alt="gymnase de la tannerie Mornant">
+                            <div class="contact-text">
+
+                                <h2>Contact</h2>
+                                <address>
+                                    <p>Gymnase de la Tannerie</p>
+                                    <p>10 Rte de Saint-Sorlin,</p>
+                                    <p>69440 Mornant</p>
+                                    <p>Tel : 202058858</p>
+                                    <p>emailmelmlrer@gmail.com</p>
+                                </address>
                             </div>
-                            <h3>Entrainement adulte</h3>
-                            <p>Les entrainements sont libres pour les adultes avec la possibilité le mercredi de 20h30 à 21h30 d'avoir un entrainement dirigé avec notre entraineur Dominique.</p>
-                            <p><strong>Le mercredi de 19h30 à 21h30.</strong></p>
-                            <p><strong>Le vendredi de 19h à 21h.</strong></p>
-                            <p>Pas d'entrainement dirigé pendant les vacances scolaires</p>
+                        </div>
+
+                        
+                        
+                    </article>
+                    <article class="contact-google">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6637.117842003577!2d4.667144584805354!3d45.61939904345314!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4fb2825e54c4f%3A0x5c6e5773aa1103ce!2sGymnase%20de%20la%20Tannerie!5e0!3m2!1sfr!2sfr!4v1687773803627!5m2!1sfr!2sfr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </article>
+
+                    <article class="contact-formulaire">
+
+                        <form action="formulaire.php" method="post">
+                            <h2>Envoyer un message</h2>
+                            <label for="nom">Nom</label>
+                            <input type="text" name="nom" placeholder="Votre nom" required>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="votreemail@email.com" required>
+                            <label for="tel">Téléphone</label>
+                            <input type="tel" name="tel" placeholder="Tel: +33 757854575" required>
+                            <label for="sujet">Sujet</label>
+                            <input type="text" name="sujet" placeholder="A propos.." required>
+                            <label for="message">Message</label>
+                            <textarea name="message" id=""placeholder="Bonjour..." required></textarea>
+                            <button type="submit">Envoyer</button>
                             
-                            <div class="section-ourclub ">
-                                <a href="inscription.html">Modalités d'inscription</a>
-                            </div>
-                        </div>
+                        </form>
                     </article>
-                    <article class="animation-droite entrnmt-article">
-                        
-                        <div class="nouveaute">
-                            <div class="logo-raquette-nouveaute">
-                                <img src="img/raq-tt-color.png" alt="logo-raquette">
-                            </div>
-                            <h3>Entrainement jeune</h3>
-                            <p>Les entrainements pour les jeunes sont dirigés par notre entraineur Dominique.</p>
-                            <p><strong>Le mercredi de 19h30 à 20h30.</strong></p>
-                            <p><strong>Le vendredi de 19h à 20h30.</strong></p>
-                            <p>Les entrainements n'auront pas lieu pendant les petites et grandes vacances mais il est quand même possible de venir s'entrainer avec les adultes pour ceux qui ont envie.</p>
-                            <div class="section-ourclub entrnmt-boutton">
-                                <a href="inscription.html">Modalités d'inscription</a>
-                            </div>
-                        </div>
-                    </article>
-                    
                 </section>
-                
+
+
+
             </main>
             <footer>
                 <div class="footerback"></div>
