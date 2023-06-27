@@ -1563,7 +1563,7 @@ margin: 9rem auto;
     background-color: rgba(235, 235, 235, 0.116);
     margin: 5rem auto;
     border-radius: 1rem;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
 }
 
 .contact-formulaire h2{
