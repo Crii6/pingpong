@@ -1605,7 +1605,7 @@ margin: 9rem auto;
 }
 
 .contact-formulaire button{
-    background-color: rgb(19, 19, 19);
+    background: linear-gradient(90deg, var(--principal-color) 5%, var(--second-color) 95%);
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 1px 1px 5px black;
