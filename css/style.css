@@ -1393,6 +1393,7 @@ footer {
     .footerback{
         height: 1100px;
     }
+
 }
 
 
@@ -1457,6 +1458,9 @@ footer {
     justify-content: center;
 }
 
+
+/* **********************DESKTOP******************* */
+
 @media screen and (min-width: 1100px) {
     
 .entrnmt-container{
@@ -1465,6 +1469,8 @@ margin: 9rem auto;
 
 }
 }
+
+/* ***********************2K******************** */
 
 @media screen and (min-width: 2150px){
 
@@ -1550,7 +1556,7 @@ margin: 9rem auto;
     text-shadow: 1px 1px 1px black;
     margin-bottom: 3rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.212);
+    border-bottom: 2px solid rgba(49, 49, 49, 0.363);
 }
 
 .contact-google iframe{
@@ -1560,7 +1566,7 @@ margin: 9rem auto;
 
 
 .contact-formulaire{
-    background-color: rgba(235, 235, 235, 0.116);
+    background-color: rgba(235, 235, 235, 0.226);
     margin: 5rem auto;
     border-radius: 1rem;
     box-shadow: 1px 1px 5px rgb(0, 0, 0);
@@ -1580,6 +1586,7 @@ margin: 9rem auto;
     flex-direction: column;
     padding: 1rem 2rem 2rem;
 }
+
 
 .contact-formulaire label,.contact-formulaire button{
     margin: 1rem 0;
@@ -1605,12 +1612,158 @@ margin: 9rem auto;
 }
 
 .contact-formulaire button{
-    background: linear-gradient(90deg, var(--principal-color) 5%, var(--second-color) 95%);
+    background: linear-gradient(90deg, var(--principal-color)50%, var(--second-color) 70%);
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 1px 1px 5px black;
     margin-top: 2rem;
     color: white;
     border: none;
+    background-position: right;
+    transition: background 0.9s ease-in;
+    background-size: 200% 100%;
 }
 
+.contact-formulaire button:hover{
+    background-position: left;
+}
+
+
+/* **************************TABLETTE*********************** */
+
+@media screen and (min-width: 780px){
+   
+.contact{
+    position: relative;
+}
+
+.contact-adresse{
+    width: 40%;
+    height: 475.5px;
+    left: 5%;
+    position: relative;
+}
+
+.contact-formulaire{
+    width: 40%;
+}
+
+.contact-formulaire{
+    position: absolute;
+    top:0;
+    right: 5%;
+    margin-top: 0;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+}
+
+
+.contact-formulaire label,.contact-formulaire h2, .contact-formulaire button, .contact-formulaire textarea{
+    margin: 0;
+}
+
+.contact-formulaire h2{
+    padding-bottom: 1.5rem;
+    margin: 1rem -2rem 3rem -2rem;
+    font-size: 1.8rem;
+    
+}
+
+.contact-formulaire label{
+    display: none;
+}
+
+.contact-formulaire input,.contact-formulaire textarea{
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: 0.7rem;
+    padding: 0.5rem 0;
+    background-color: rgba(235, 235, 235, 0.089);
+}
+
+.contact-formulaire textarea{
+    height: initial;
+}
+
+.contact-formulaire button{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 80%;
+    margin: 3.5rem auto 0;
+}
+
+}
+
+
+
+/* **************************DESKTOP*********************** */
+
+@media screen and (min-width: 1100px){
+    
+.contact-container{
+    margin: 10rem auto;
+}
+
+.contact-gymnase{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.contact-formulaire{
+    width: 25%;
+    right: 0;
+    transform: translateY(-12%);
+    padding: 0;
+    background-color: #e7e7e717;
+}
+
+.contact-formulaire h2{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
+.contact-formulaire label{
+    display: block;
+}
+
+.contact-adresse{
+    background-color: #fff;
+    box-shadow: initial;
+    width: 60%;
+    left: 0;
+    height: initial;
+}
+
+.contact-text{
+    background-color: rgba(19, 19, 19, 0.938);
+    position: absolute;
+    right: 0;
+    top: 18%;
+    width: 40%;
+    transform: translateX(50%);
+    padding: 2rem 3rem;
+    font-size: 1.2rem;
+}
+
+
+.contact-google{
+    margin-top: 15rem;
+}
+
+
+
+
+}
+
+@media screen and (min-width: 2150px){
+    .contact-container{
+        margin-bottom: 22rem;
+    }
+}
