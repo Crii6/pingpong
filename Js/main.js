@@ -1,37 +1,37 @@
 // **********************************loader*************************
 
-// window.addEventListener('load', (event) => {
+window.addEventListener('load', (event) => {
 
-//   container = document.getElementById('rotate')
-//   document.body.classList.remove('clean-transition')
-//   ball = document.getElementById('ball');
-//   canva = document.getElementById('mycanvas')
-//   contenu = document.getElementById('contenu')
+  container = document.getElementById('rotate')
+  document.body.classList.remove('clean-transition')
+  ball = document.getElementById('ball');
+  canva = document.getElementById('mycanvas')
+  contenu = document.getElementById('contenu')
 
-//   function zoom(){
-//     ball.classList.add('disparait');
-//     ball.style.backgroundColor = "rgba(220,220,220,1)"
-//     container.style.animationPlayState = 'paused';
-//     ball.style.animationPlayState = "paused";
-//     ball.style.animation = "none";
-//   }
+  function zoom(){
+    ball.classList.add('disparait');
+    ball.style.backgroundColor = "rgba(220,220,220,1)"
+    container.style.animationPlayState = 'paused';
+    ball.style.animationPlayState = "paused";
+    ball.style.animation = "none";
+  }
   
   
-//   function apparaitloader(){
-//     contenu.classList.add('contenuapparait')
-//     canva.classList.add('canvadisparait')
-//     contenu.style.display = "block"
-//   }
+  function apparaitloader(){
+    contenu.classList.add('contenuapparait')
+    canva.classList.add('canvadisparait')
+    contenu.style.display = "block"
+  }
   
-//   function bye(){
-//     canva.style.display = 'none'
-//   }
+  function bye(){
+    canva.style.display = 'none'
+  }
 
-//   setInterval(zoom,1490)
-//   setInterval(apparaitloader, 2190)
-//   setInterval(bye, 2740)
+  setInterval(zoom,1490)
+  setInterval(apparaitloader, 2190)
+  setInterval(bye, 2740)
 
-// })
+})
 
 // ******************************Navigation au scroll******************************
 window.addEventListener('scroll', function() {
