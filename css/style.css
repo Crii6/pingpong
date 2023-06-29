@@ -1767,3 +1767,44 @@ margin: 9rem auto;
         margin-bottom: 22rem;
     }
 }
+
+
+
+/* 
+**********************************************************************************************************************************
+********************************************************PAGE HISTORIQUE**************************************************************
+********************************************************************************************************************************** */
+
+
+/* ************************image background header********************* */
+
+
+#historique-back{
+    background: url('../img/sports-3097621.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    left: 0;
+}
+
+.historique-max-back {
+    height: 400px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.historique-wrapper{
+    height: 400px;
+}
+
+
+
+/* ************************contenu historique********************* */
+
+
