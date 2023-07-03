@@ -1808,3 +1808,76 @@ margin: 9rem auto;
 /* ************************contenu historique********************* */
 
 
+.historique-section img{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.411);
+}
+
+.historique-section h2,.historique-section h3{
+    text-align: center;
+    color: rgba(122, 82, 49, 0.527);
+}
+
+.historique-section article{
+    /* background-color: #0000002d; */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.historique-section{
+    font-family: DM sans;
+}
+
+.historique-section p{
+    color: rgb(15, 14, 36);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: 1rem 3rem;
+    line-height: 2rem;
+}
+
+.historique-presidence,.historique-association{
+    padding: 1rem;
+}
+
+.historique-presidence li{
+    list-style: none;
+}
+
+.historique-presidence ul{
+    padding: 2rem 2rem 0;
+}
+
+.historique-presidence li::before{
+    content: "- ";
+}
+
+.historique-association p{
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+
+
+/* **************************DESKTOP*********************** */
+
+@media screen and (min-width: 1100px){
+
+
+
+.historique-section article:nth-child(1) img{
+    width: 50%;
+    border: none;
+    float: left;
+}
+
+.historique-section{
+}
+
+
+
+
+
+}
