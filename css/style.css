@@ -1811,6 +1811,7 @@ margin: 9rem auto;
 .historique-section img{
     width: 100%;
     border: 2px solid rgba(0, 0, 0, 0.411);
+    /* border-radius: 0.5rem; */
 }
 
 .historique-section h2,.historique-section h3{
@@ -1865,15 +1866,113 @@ margin: 9rem auto;
 
 @media screen and (min-width: 1100px){
 
+.historique-container{
+    margin: 10rem auto;
+}
 
-
-.historique-section article:nth-child(1) img{
+.historique-section  img{
     width: 50%;
     border: none;
-    float: left;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 .historique-section{
+    border-radius: 1rem;
+    position: relative;
+}
+
+.historique-section article{
+    margin-bottom: 2rem;
+    background-color: #0e0e0e07;
+    box-shadow: none;
+    border: 0.1px solid rgba(0, 0, 0, 0.027);
+}
+
+.historique-section p{
+    font-size: 1.9rem;
+    line-height: 2.7rem;
+}
+
+.historique-section h2{
+    font-size: 3rem;
+}
+
+.historique-section article:first-child{
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.historique-section article:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 0;
+    /* justify-content: space-between; */
+}
+
+
+
+.historique-text2{
+    width: 40%;
+    align-self: flex-end;
+    
+}
+.historique-text3{
+    width: 40%;
+    align-self: flex-start;
+}
+
+.historique-text2 p{
+    padding-left: 0;
+}
+.historique-text3 p{
+    padding-left: 0;
+}
+
+
+.historique-section article:nth-child(3){
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 400px;
+}
+.historique-section article:nth-child(3) img{
+    
+    height: 400px;
+}
+
+.historique-section article:nth-child(4){
+    height: 400px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.historique-section article:nth-child(5){
+    height: 400px;
+    width: 45%;
+    position: absolute;
+    right: 0;
+    transform: translateY(-115.3%);
+}
+.historique-section article:nth-child(4) h3{
+    font-size:  2.5rem;
+    text-transform: uppercase;
+}
+.historique-section article:nth-child(4) li{
+    font-size:  2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.historique-text4{
+    padding: 1rem;
+}
+
+.historique-association p{
+    margin: 0.7rem;
 }
 
 
