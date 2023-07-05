@@ -1980,3 +1980,9 @@ margin: 9rem auto;
 
 
 }
+
+@media screen and (min-width: 2150px){
+    .historique-container{
+        margin-bottom: 22rem;
+    }
+}
