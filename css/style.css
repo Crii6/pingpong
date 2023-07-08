@@ -2021,3 +2021,65 @@ margin: 9rem auto;
 .inscription-wrapper{
     height: 400px;
 }
+
+
+/* *****************************inscription article************************** */
+
+.inscription article{
+    background-color: rgba(2, 2, 2, 0.01);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.774);
+    color: rgb(7, 6, 6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5rem;
+    height: 650px;
+}
+
+.inscription article h2{
+    text-align: center;
+    color: rgb(7, 6, 6);
+    text-transform: uppercase;
+    color: var(--principal-color);
+    margin: 0;
+}
+
+.inscription article h3{
+    font-size: 5rem;
+    color: var(--second-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+}
+
+.inscription article p{
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+.inscription-text{
+    margin-top: 4rem;
+}
+
+.inscription article img{
+    width: 100px;
+}
+
+.inscription article button{
+    padding: 1.5rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    background: linear-gradient(to right, var(--principal-color), var(--second-color) 70%);
+    color: white;
+}
+
+/* .inscription article h2::before,.inscription article h2::after{
+    font-family: FontAwesome;
+    content: "\f068";
+    font-size: 1.5rem;
+    color: rgb(158, 59, 59);
+} */
