@@ -1986,3 +1986,38 @@ margin: 9rem auto;
         margin-bottom: 22rem;
     }
 }
+
+
+/* 
+**********************************************************************************************************************************
+********************************************************PAGE INSCRIPTION**************************************************************
+********************************************************************************************************************************** */
+
+
+
+/* ************************image background header********************* */
+
+
+#inscription-back{
+    background: url('../img/tennis-table.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    left: 0;
+}
+
+.inscription-max-back {
+    height: 400px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.inscription-wrapper{
+    height: 400px;
+}
