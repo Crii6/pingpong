@@ -2025,17 +2025,15 @@ margin: 9rem auto;
 
 /* *****************************inscription article************************** */
 
-.inscription-slider{
-    background-color: rgba(2, 2, 2, 0.01);
+.inscription-slider div article{
+    background-color: rgba(2, 2, 2, 0.747);
     padding: 01rem;
-    margin-bottom: 2rem;
     border-radius: 2rem;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.774);
     color: rgb(7, 6, 6);
     max-width: 500px;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 5rem;
+    width: 97%;
+    margin: 2rem auto;
     height: 700px;
 }
 
@@ -2065,6 +2063,8 @@ margin: 9rem auto;
     color: var(--principal-color);
     margin: 0 1rem 1rem;
     text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
 }
 
 .inscription article h3{
@@ -2086,17 +2086,37 @@ margin: 9rem auto;
     width: 100px;
 }
 
-.inscription article button{
-    padding: 1.5rem 2rem;
+.inscription-slider article button{
+    padding: 1.5rem 1rem;
     border-radius: 2rem;
     border: none;
     background: linear-gradient(to right, var(--principal-color), var(--second-color) 70%);
     color: white;
 }
 
-.inscription-ajustement2 h3{
-    margin: 4rem;
+.inscription-ajustement1 h3{
+    margin: 0;
 }
+
+.inscription-ajustement2 h3{
+    margin-top: 0;
+    margin-bottom: 5.9rem;
+}
+
+.inscription-ajustement3 p:nth-child(4){
+    font-size: 1rem;
+    margin: 0;
+}
+
+.inscription-ajustement3 .inscription-text p:nth-child(2){
+    margin: 2rem;
+}
+
+.inscription-ajustement3 h3{
+    margin-top: 0;
+    margin-bottom: 5.5rem;
+}
+
 
 
 
