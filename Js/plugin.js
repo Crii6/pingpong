@@ -7,4 +7,12 @@ $(document).ready(function () {
       autoplaySpeed: 9000,
     });
   });
+
+
+$(document).ready(function () {
+    $('.inscription-slider').slick({
+      
+    });
+  });
   
+
