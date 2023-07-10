@@ -17,7 +17,7 @@ $(document).ready(function () {
       slidesToShow: 3,
       responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1168,
       settings: {
         arrows: false,
         centerMode: true,
@@ -26,14 +26,13 @@ $(document).ready(function () {
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 980,
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '15px',
+        centerPadding: '14px',
         focusOnSelect: true,
-        slidesToShow: 1,
-        blur: true
+        slidesToShow: 1
       }
     }
   ]

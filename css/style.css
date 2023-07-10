@@ -2026,16 +2026,36 @@ margin: 9rem auto;
 /* *****************************inscription article************************** */
 
 .inscription-slider div article{
-    background-color: rgba(2, 2, 2, 0.747);
+    background-color: rgba(2, 2, 2, 0.007);
     padding: 01rem;
     border-radius: 2rem;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.774);
     color: rgb(7, 6, 6);
     max-width: 500px;
-    width: 97%;
-    margin: 2rem auto;
+    width: 95%;
+    margin: 5rem auto;
     height: 700px;
 }
+
+.inscription-container{
+    width: 100%;
+}
+
+.slick-center{
+    scale: 1.04;
+}
+
+.inscription-slider .slick-prev::before{
+    color: rgba(0, 0, 0, 0.411)!important;
+    font-size: 4rem!important;
+    margin: -1rem!important;
+}
+.inscription-slider .slick-next::before{
+    margin: 1rem!important;
+    color: rgba(0, 0, 0, 0.452)!important;
+    font-size: 4rem!important;
+}
+
 
 .inscription article{
     display: flex;
