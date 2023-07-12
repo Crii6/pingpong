@@ -12,15 +12,15 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.inscription-slider').slick({
-        centerMode: true,
-      centerPadding: '60px',
+        centerMode: false,
+      centerPadding: '20px',
       slidesToShow: 3,
       responsive: [
     {
-      breakpoint: 1168,
+      breakpoint: 1100,
       settings: {
         arrows: false,
-        centerMode: true,
+        centerMode: false,
         centerPadding: '40px',
         slidesToShow: 3
       }
