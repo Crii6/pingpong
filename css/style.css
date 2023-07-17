@@ -2164,12 +2164,12 @@ margin: 9rem auto;
     .inscription-slider .slick-prev::before{
         color: rgba(24, 46, 112, 0.623)!important;
         font-size: 4.5rem!important;
-        margin: 0rem!important;
+        margin: 1rem!important;
         /* text-shadow: 1px 1px 5px rgba(17, 19, 122, 0.712); */
     }
     .inscription-slider .slick-next::before{
-        margin: 0rem!important;
-        color: rgba(23, 47, 112, 0.315)!important;
+        margin: -1rem!important;
+        color: rgba(24, 46, 112, 0.623)!important;
         font-size: 4.5rem!important;
         /* text-shadow: 1px 1px 5px rgba(17, 19, 122, 0.712); */
     }
@@ -2182,25 +2182,26 @@ margin: 9rem auto;
 
 
 
+@media screen and (min-width: 640px) {
+    
+    .inscription-slider .slick-prev::before{
+        color: rgba(24, 46, 112, 0.923)!important;
+        font-size: 4.5rem!important;
+        margin: 1rem!important;
+        /* text-shadow: 1px 1px 5px rgba(17, 19, 122, 0.712); */
+    }
+    .inscription-slider .slick-next::before{
+        margin: -1rem!important;
+        color: rgba(24, 46, 112, 0.923)!important;
+        font-size: 4.5rem!important;
+        /* text-shadow: 1px 1px 5px rgba(17, 19, 122, 0.712); */
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .inscription-ajustement3 h3{
+        margin-top: 1rem;
+        margin-bottom: 4.5rem;
+    }
+}
 
 
 /* ****************************desktop********************** */
@@ -2215,8 +2216,8 @@ margin: 9rem auto;
 
     .inscription article:hover{
         scale: 1.13;
-        z-index: 5;
-        background-color: rgb(231, 231, 231);
+        z-index: 500;
+        background-color: rgb(230, 230, 230);
     }
 
     .inscription-ajustement2:hover ~ article{

@@ -30,6 +30,36 @@ $(document).ready(function () {
       settings: {
         arrows: true,
         centerMode: true,
+        centerPadding: '150px',
+        focusOnSelect: true,
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 870,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '120px',
+        focusOnSelect: true,
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '100px',
+        focusOnSelect: true,
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        arrows: true,
+        centerMode: true,
         centerPadding: '14px',
         focusOnSelect: true,
         slidesToShow: 1
