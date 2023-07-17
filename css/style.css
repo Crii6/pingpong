@@ -2211,17 +2211,20 @@ margin: 9rem auto;
     
 
     .inscription article{
-        transition: all 0.3s ease-in-out;
+        transition: scale 0.3s ease-in-out;
+        z-index: 50;
     }
 
     .inscription article:hover{
         scale: 1.13;
-        z-index: 500;
         background-color: rgb(230, 230, 230);
     }
 
     .inscription-ajustement2:hover ~ article{
         filter: blur(5px);
         background-color: black;
+    }
+    .slick-list{
+        overflow: initial!important;
     }
 }
