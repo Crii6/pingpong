@@ -1052,12 +1052,6 @@ footer {
 
 
 
-
-
-
-
-
-
 /* ***************************TABLETTE********************* */
 
 @media screen and (min-width: 780px){
@@ -2033,9 +2027,12 @@ margin: 9rem auto;
     color: rgb(7, 6, 6);
     max-width: 500px;
     width: 95%;
-    margin: 5rem auto;
+    margin: 5rem auto 3rem;
     height: 700px;
+    position: relative;
 }
+
+
 
 .inscription-container{
     width: 100%;
@@ -2050,10 +2047,16 @@ margin: 9rem auto;
     font-size: 4rem!important;
     margin: -1rem!important;
 }
+
+.remove-arrow{
+    display: none;
+}
+
 .inscription-slider .slick-next::before{
     margin: 1rem!important;
     color: rgba(23, 47, 112, 0.849)!important;
     font-size: 4rem!important;
+
 }
 
 
@@ -2064,6 +2067,7 @@ margin: 9rem auto;
     justify-content: space-between;
     height: 680px;
     text-align: center;
+    
 }
 
 .inscription-ajustement1  p,.inscription-ajustement3 p{
@@ -2106,12 +2110,20 @@ margin: 9rem auto;
     width: 100px;
 }
 
-.inscription-slider article button{
+.inscription-slider article a{
     padding: 1.5rem 1rem;
     border-radius: 2rem;
     border: none;
     background: linear-gradient(to right, var(--principal-color), var(--second-color) 70%);
     color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.inscription-slider article a:hover{
+    background: var(--second-color);
+    transform: scale(1.1);
+    border: 2px solid white;
 }
 
 .inscription-ajustement1 h3{
@@ -2136,6 +2148,57 @@ margin: 9rem auto;
     margin-top: 0;
     margin-bottom: 5.5rem;
 }
+
+
+
+/* ************************modal inscription********************* */
+
+.inscription-modal{
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto 5rem;
+    width: 95%;
+    border-radius: 2rem;
+    display: none;
+    box-shadow: 1px 1px 5px black;
+    max-width: 500px;
+    transition: all 0.3 ease-in-out;
+}
+
+.inscription-container-modal{
+    padding: 1rem;
+    text-align: center;
+    margin: auto;
+}
+
+.inscription-modal.visible{
+    left: 50%;
+}
+
+.inscription-container-modal h2{
+    color: var(--principal-color);
+}
+
+.inscription-container-modal h3{
+    color: var(--second-color);
+}
+
+.inscription-modal a:last-child{
+    padding: 1.5rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    background: linear-gradient(to right, var(--principal-color), var(--second-color) 70%);
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* **************************petit mobile*********************** */
@@ -2168,7 +2231,7 @@ margin: 9rem auto;
         /* text-shadow: 1px 1px 5px rgba(17, 19, 122, 0.712); */
     }
     .inscription-slider .slick-next::before{
-        margin: -1rem!important;
+        margin: -1.3rem!important;
         color: rgba(24, 46, 112, 0.623)!important;
         font-size: 4.5rem!important;
         /* text-shadow: 1px 1px 5px rgba(17, 19, 122, 0.712); */
@@ -2227,4 +2290,6 @@ margin: 9rem auto;
     .slick-list{
         overflow: initial!important;
     }
+
+    
 }
