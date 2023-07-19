@@ -2170,25 +2170,32 @@ margin: 9rem auto;
     margin: auto;
 }
 
+.inscription-modal a{
+    text-decoration: none;
+}
+
 .inscription-modal.visible{
     left: 50%;
 }
 
 .inscription-container-modal h2{
     color: var(--principal-color);
+    
 }
 
 .inscription-container-modal h3{
     color: var(--second-color);
 }
 
-.inscription-modal a:last-child{
-    padding: 1.5rem 1rem;
+.inscription-ferme a{
+    padding: 1.5rem 4rem;
     border-radius: 2rem;
     border: none;
     background: linear-gradient(to right, var(--principal-color), var(--second-color) 70%);
     color: white;
     text-decoration: none;
+    display: inline-block;
+    margin: 2rem auto;
 }
 
 
@@ -2271,8 +2278,11 @@ margin: 9rem auto;
 
 @media screen and (min-width: 980px){
 
-    
+    .inscription-container{
+        margin: 5rem auto 7rem;
+    }
 
+    
     .inscription article{
         transition: scale 0.3s ease-in-out;
         z-index: 50;
