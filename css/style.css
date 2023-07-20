@@ -1246,13 +1246,13 @@ footer {
 }
 
 .club1 li{
-    padding-right: 2.2rem;
+    padding-right: 3.9rem;
 }
 
 .club1 li a{
     display: inline-block;
     width: 100%;
-    margin: 2rem 1rem;
+    margin: 2rem 2rem;
     color: black;
 }
 
@@ -2364,7 +2364,7 @@ margin: 9rem auto;
         filter: blur(5px);
         background-color: black;
     }
-    .slick-list{
+    .inscription-container .slick-list{
         overflow: initial!important;
     }
 
