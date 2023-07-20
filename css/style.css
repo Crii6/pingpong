@@ -2170,8 +2170,31 @@ margin: 9rem auto;
     margin: auto;
 }
 
+.inscription-container-modal a:first-child{
+    margin-top: 2rem;
+}
+
+.inscription-container-modal > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.inscription-container-modal > div:hover{
+    scale: 1.1;
+}
+.inscription-container-modal > div:hover h3,.inscription-container-modal > div:hover h3 > i{
+    /* color: var(--principal-color); */
+    text-decoration: underline;
+
+    
+}
+
 .inscription-modal a{
     text-decoration: none;
+    padding: 0;
 }
 
 .inscription-modal.visible{
@@ -2180,11 +2203,23 @@ margin: 9rem auto;
 
 .inscription-container-modal h2{
     color: var(--principal-color);
-    
 }
 
 .inscription-container-modal h3{
     color: var(--second-color);
+    width: 100%;
+    margin-top: 0.7rem;
+    margin-bottom: 0.4rem;
+}
+
+.inscription-container-modal h3 i{
+    font-size: 1.7rem;
+}
+
+.inscription-container-modal p{
+    margin-top: 0;
+    font-size: 1.2rem;
+    padding: 0 3rem;
 }
 
 .inscription-ferme a{
@@ -2196,10 +2231,41 @@ margin: 9rem auto;
     text-decoration: none;
     display: inline-block;
     margin: 2rem auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.inscription-ferme a:hover{
+    background: var(--second-color);
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+
+.inscription-img-aide div{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.inscription-img-aide h3{
+    margin: 3rem auto 0;
 }
 
 
 
+.inscription-img-aide img{
+    width: 80px;
+    height: 80px;
+}
+
+
+.inscription-img-aide img:hover{
+    scale: 1.1;
+}
+
+.inscription-cheque h3{
+    margin: 3rem auto 1rem;
+    text-decoration: underline;
+}
 
 
 
