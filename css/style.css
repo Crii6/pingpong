@@ -2358,6 +2358,7 @@ margin: 9rem auto;
     .inscription article:hover{
         scale: 1.13;
         background-color: rgb(230, 230, 230);
+        z-index: 2200;
     }
 
     .inscription-ajustement2:hover ~ article{
