@@ -232,7 +232,7 @@ body {
 /* ************************HEADER********************* */
 
 #back {
-    background: url('../img/Photo-concours.png');
+    background: url('../img/Photo-concours.webp');
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -1993,7 +1993,7 @@ margin: 9rem auto;
 
 
 #inscription-back{
-    background: url('../img/back_inscription2.jpg');
+    background: url('../img/back_inscription2.webp');
     background-size: cover;
     background-position: center;
     height: 100%;

@@ -50,7 +50,7 @@ window.addEventListener('scroll', function() {
 
 // ******************************changement d'image background******************************
 
-const images = [  'url(../img/Photo-concours.png)', 'url(../img/pexels-magda-ehlers-4080060.jpg)', 'url(../img/homme-pingpong.jpg)'];
+const images = [  'url(../img/Photo-concours.webp)', 'url(../img/pexels-magda-ehlers-4080060.webp)', 'url(../img/homme-pingpong.jpg)'];
 
 let currentIndex = 0;
 const background = document.getElementById('back');
