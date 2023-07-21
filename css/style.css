@@ -1993,7 +1993,7 @@ margin: 9rem auto;
 
 
 #inscription-back{
-    background: url('../img/tennis-table.jpg');
+    background: url('../img/back_inscription2.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -2370,4 +2370,11 @@ margin: 9rem auto;
     }
 
     
+}
+
+
+@media screen and (min-width: 2150px) {
+    .inscription-container{
+        margin-bottom: 22rem;
+    }
 }
