@@ -2045,7 +2045,7 @@ margin: 9rem auto;
 .inscription-slider .slick-prev::before{
     color: rgba(23, 47, 112, 0.849)!important;
     font-size: 4rem!important;
-    margin: -1rem!important;
+    margin: 0rem!important;
 }
 
 .remove-arrow{
@@ -2053,7 +2053,7 @@ margin: 9rem auto;
 }
 
 .inscription-slider .slick-next::before{
-    margin: 1rem!important;
+    margin: 0rem!important;
     color: rgba(23, 47, 112, 0.849)!important;
     font-size: 4rem!important;
 
@@ -2267,7 +2267,6 @@ margin: 9rem auto;
     margin: 3rem auto 1rem;
     text-decoration: underline;
 }
-
 
 
 
