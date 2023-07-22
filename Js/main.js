@@ -50,15 +50,17 @@ window.addEventListener('scroll', function() {
 
 // ******************************changement d'image background******************************
 
+if(window.location.pathname=='/index.html'){
 const images = [  'url(../img/Photo-concours.webp)', 'url(../img/pexels-magda-ehlers-4080060.webp)', 'url(../img/homme-pingpong.jpg)'];
 
 let currentIndex = 0;
 const background = document.getElementById('back');
 
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % images.length;
-  background.style.backgroundImage = images[currentIndex];
-}, 10000);
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    background.style.backgroundImage = images[currentIndex];
+  }, 10000);
+}
 
 
 
