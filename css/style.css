@@ -2039,7 +2039,7 @@ margin: 9rem auto;
 }
 
 .slick-center{
-    scale: 1.04;
+    /* scale: 1.04; */
 }
 
 .inscription-slider .slick-prev::before{
@@ -2267,8 +2267,9 @@ margin: 9rem auto;
     margin: 3rem auto 1rem;
     text-decoration: underline;
 }
-
-
+.slick-track.remove-slide{
+    transform: none!important;
+}
 
 
 
