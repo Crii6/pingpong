@@ -13,6 +13,9 @@ if(array_key_exists("action", $_GET)){
         case "contact" :
             include 'controllers/contact.php';
             break;
+        case "formulaire" :
+            include 'controllers/formulaire.php';
+            break;
         
     }
 
