@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once 'vendor/autoload.php';
     use \Mailjet\Resources;
 
@@ -35,15 +36,19 @@
                                         <h2>$sujet :</h2>
                                         <p>$message</p>
                                         <br>
-                                        <p>$nom</p>
+                                        <p>Nom : $nom</p>
                                         <p>Email : $email</p>
                                         <p>Telephone : $tel</p>"
                     ]
                 ]
             ];
             $response = $mj->post(Resources::$Email, ['body' => $body]);
-            $response->success();
-            echo "email envoyé avec succes";
+            if ($response->success()) {
+                $_SESSION['email_sent'] = true;
+                header('location: index.php?action=contact');
+            } else {
+                echo "Erreur lors de l'envoi de l'email";
+            }
         }else{
             echo "Email non valide";
         }

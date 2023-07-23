@@ -87,7 +87,12 @@
                             <label for="message">Message</label>
                             <textarea name="message" id="" placeholder="Bonjour..." required></textarea>
                             <button type="submit">Envoyer</button>
-                            
+                            <?php
+                            if (isset($_SESSION['email_sent']) && $_SESSION['email_sent']) {
+                                echo '<h3 id="message-envoye">Message envoyé !</h3>';
+                                unset($_SESSION['email_sent']); 
+                                }
+                            ?>
                         </form>
                     </article>
                 </section>

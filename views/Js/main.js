@@ -220,3 +220,15 @@ span.onclick = function() {
 }
 
 
+// ************************************************envoie message formulaire************************************
+
+function afficherMessageEnvoye() {
+  // Afficher le message en modifiant le style.display
+  document.getElementById('message-envoye').style.display = 'block';
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+    const emailSent = urlParams.get('email_sent');
+    if (emailSent === 'true') {
+        afficherMessageEnvoye();
+    }
