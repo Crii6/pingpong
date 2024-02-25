@@ -48,9 +48,11 @@
                 header('location: index.php?action=contact');
             } else {
                 echo "Erreur lors de l'envoi de l'email";
+                header('location: index.php?action=contact');
             }
         }else{
             echo "Email non valide";
+            header('location: index.php?action=contact');
         }
 
     }else{

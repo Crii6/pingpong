@@ -1115,8 +1115,16 @@ footer {
 @media screen and (min-width: 1100px){
 
 
+.wrapper{
+    height: 100vh;
+}
+
 .max-back{
-    height: 830px
+    height: 100vh;
+}
+
+.text-header{
+    height: 85vh;
 }
 
 
@@ -1278,7 +1286,7 @@ footer {
 }
 
 .container{
-    margin: 18rem auto;
+    margin: 6rem auto 18rem;
 }
 
 
@@ -1375,6 +1383,10 @@ footer {
 
     .text-header{
         height: 1050px;
+    }
+
+    .wrapper{
+        height: 700px;
     }
 
     .max-back{
@@ -1774,7 +1786,6 @@ margin: 9rem auto;
 
 
 /* ************************image background header********************* */
-
 
 #historique-back{
     background: url('../img/sports-3097621.jpg');
@@ -2380,4 +2391,134 @@ margin: 9rem auto;
     .inscription-container{
         margin-bottom: 22rem;
     }
+}
+
+
+/* 
+**********************************************************************************************************************************
+********************************************************PAGE CLASSEMENT**************************************************************
+********************************************************************************************************************************** */
+
+/* ************************image background header********************* */
+
+#classement-back{
+    background: url('../img/pexels-magda-ehlers-4080060.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    left: 0;
+}
+
+.classement-max-back {
+    height: 400px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.classement-wrapper{
+    height: 400px;
+}
+
+/* ************************contenu classement********************* */
+
+.section-classement{
+    width: 90%;
+    margin: auto;
+    background-color: rgb(241, 241, 241);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0px 0px 3px black;
+}
+
+.back-entete-tableau-classement{
+    margin: auto;
+    padding: 1rem;
+}
+
+.entete-tableau-classement {
+    background-color: rgb(34, 44, 75);
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.entete-nom{
+    flex-basis: 20%;
+}
+
+.entete-tableau-classement h3:nth-child(5){
+    padding-right: 1.4rem;
+}
+
+.tableau-classement{
+    margin: auto;
+    width: 98%;
+    color: black;
+}
+
+.body-tableau-classement{
+    line-height: 5rem;
+    width: 98%;
+}
+
+.body-tableau-classement td{
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.body-tableau-classement td:nth-child(1){
+    width: 31%;
+}
+
+.body-tableau-classement td:nth-child(2){
+    padding-left: 0;
+    text-align: left;
+}
+
+.body-tableau-classement td:nth-child(3) {
+    width: 21%;
+}
+
+
+.body-tableau-classement td:nth-child(5) {
+    width: 20%;
+}
+
+.body-tableau-classement td:nth-child(1){
+    text-align: left;
+}
+
+
+.logo-classement{
+    background-color: rgb(228, 231, 252);
+    border-radius: 1.5rem;
+}
+
+.logo-classement .fa-angles-up{
+    color: green;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.logo-classement .fa-angles-down{
+    color: red;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.logo-classement .fa-equals{
+    color: black;
+    font-size: 2rem;
+    vertical-align: middle;
 }

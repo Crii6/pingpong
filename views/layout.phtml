@@ -87,6 +87,21 @@
                             <script src="views/Js/main.js"></script>
                 
                 </div>
+
+                <script>
+                    // ******************************changement d'image background******************************
+                    if(window.location.pathname.endsWith('/index.php')){
+                        const images = [  'url(views/img/Photo-concours.webp)', 'url(views/img/pexels-magda-ehlers-4080060.webp)', 'url(views/img/homme-pingpong.jpg)'];
+
+                        let currentIndex = 0;
+                        const background = document.getElementById('back');
+
+                        setInterval(() => {
+                            currentIndex = (currentIndex + 1) % images.length;
+                            background.style.backgroundImage = images[currentIndex];
+                        }, 10000);
+                    }
+                </script>
                 </body>
                 
                 </html>

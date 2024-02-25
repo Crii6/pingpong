@@ -16,6 +16,9 @@ if(array_key_exists("action", $_GET)){
         case "formulaire" :
             include 'controllers/formulaire.php';
             break;
+        case "classement" :
+            include 'controllers/classement.php';
+            break;
         
     }
 

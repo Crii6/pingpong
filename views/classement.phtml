@@ -1,0 +1,104 @@
+
+      
+
+        <header class="wrapper classement-wrapper" id="test">
+            <div class="classement-max-back">
+                <div id="classement-back"></div>
+            </div>
+            <div class="navigation-principal">
+                <div class="logo-nav">
+                    <div id="logo-nav">
+                        <a href="index.php"><img src="views\img\logo-tt-color.png" alt="Logo as mornant"></a>
+                        <i class="fa-solid test"></i>
+                    </div>
+                </div>
+                <nav class="nav-bar" id="nav">
+                    <ul class="sous">
+                        <li ><a href="index.php" >Accueil</a></li>
+                        <li ><a href="javascript:void(0)" class="icon club color-white current">Le club</a>
+                            <ul class="sous-menu2 club1">
+                                <li><a href="#">Historique</a></li>
+                                <li><a href="index.php?action=inscription">Inscription</a></li>
+                                <li><a href="index.php?action=contact">Nous contacter</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)" class="icon competitions color-white">Les compétitions</a>
+                            <ul class="sous-menu2 competitions1">
+                                <li><a href="#">Equipe 1</a></li>
+                                <li><a href="#">Equipe 2</a></li>
+                                <li><a href="#">Equipe 3</a></li>
+                                <li><a href="#">Equipe 4</a></li>
+                                <li><a href="#">Equipe 5</a></li>
+                                <li><a href="#">Jeune</a></li>
+                                <li><a href="#">Tournois</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="color-white">Classement joueurs</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+                <div class="entrnmt-text-header">
+                    
+                    <h1>Classement des joueurs</h1>
+                    
+                </div>
+            </header>
+
+    <main class="container historique-container">
+        <!-- Afficher la liste des joueurs
+        echo "Licence: $joueur->licence, Nom: $joueur->nom, Prénom: $joueur->prenom, Numéro du Club: $joueur->nclub, Classement: $joueur->clast\n"; -->
+        <section class="">
+            <div class="section-classement">
+                <div class="back-entete-tableau-classement">
+
+                
+                    <div class="entete-tableau-classement">
+                        <h3 class="entete-nom">Nom Prenom</h3>
+                        <h3>N°Licence</h3>
+                        <h3>Point officiels</h3>
+                        <h3>Évolution</h3>
+                        <h3>Point mensuel</h3>
+                        
+                    </div>
+                </div>
+                    <table class="tableau-classement">
+                        <tbody class="body-tableau-classement">
+                            <?php foreach ($data as $licence) { ?> 
+                                <tr>
+                                    
+                                    <td style="font-weight: bold"><?php echo $licence->nom . ' ' . $licence->prenom ?></td>
+                                    <td><?php echo $licence->licence ?></td>
+                                    <td><?php echo $licence->point ?></td>
+                                    <td class="logo-classement">
+                                        <?php
+                                        $point = intval($licence->point);
+                                        $pointm = intval($licence->pointm);
+                                        if ($point < $pointm) {
+                                            echo "Progression <i class='fa-solid fa-angles-up'></i>";
+                                        } elseif ($point == $pointm + 1 || $point == $pointm || $pointm == '0') {
+                                            echo "Stable <i class='fa-solid fa-equals'></i>";
+                                        } elseif ($point > $pointm ) {
+                                            echo "Baisse <i class='fa-solid fa-angles-down'></i>";
+                                        }
+                                        ?>
+                                    </td>
+                                    <td>
+                                        <?php 
+                                        $arondi = intval($licence->pointm);
+                                        echo round($arondi) 
+                                        ?>
+                                    </td>
+                                    
+                                </tr>
+                                <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            <div>
+            
+        
+        </section>
+    </main>
+                            
+    
