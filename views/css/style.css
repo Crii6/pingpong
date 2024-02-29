@@ -2427,6 +2427,32 @@ margin: 9rem auto;
 
 /* ************************contenu classement********************* */
 
+.bar-search-classement{
+    background-color: rgb(241, 241, 241);
+    width: 90%;
+    margin: 3rem auto;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-classement i{
+    font-size: 2rem;
+}
+
+.search-classement input{
+    border-radius: 0.5rem;
+    border-color: rgba(0, 0, 0, 0.116);
+    padding: 1rem
+}
+
+.trie-classement select{
+    padding: 1rem;
+    border-color: rgba(0, 0, 0, 0.329);
+    border-radius: 1rem;
+}
+
 .section-classement{
     width: 90%;
     margin: auto;

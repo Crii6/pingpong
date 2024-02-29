@@ -15,7 +15,7 @@
                 <nav class="nav-bar" id="nav">
                     <ul class="sous">
                         <li ><a href="index.php" >Accueil</a></li>
-                        <li ><a href="javascript:void(0)" class="icon club color-white current">Le club</a>
+                        <li ><a href="javascript:void(0)" class="icon club color-white">Le club</a>
                             <ul class="sous-menu2 club1">
                                 <li><a href="#">Historique</a></li>
                                 <li><a href="index.php?action=inscription">Inscription</a></li>
@@ -29,11 +29,11 @@
                                 <li><a href="#">Equipe 3</a></li>
                                 <li><a href="#">Equipe 4</a></li>
                                 <li><a href="#">Equipe 5</a></li>
-                                <li><a href="#">Jeune</a></li>
-                                <li><a href="#">Tournois</a></li>
+                                <li><a href="#">Equipe 6</a></li>
+                                <li><a href="#">Equipe 7</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="color-white">Classement joueurs</a></li>
+                        <li><a href="#" class="color-white current">Classement joueurs</a></li>
                     </ul>
                 </nav>
                 
@@ -49,6 +49,21 @@
         <!-- Afficher la liste des joueurs
         echo "Licence: $joueur->licence, Nom: $joueur->nom, Prénom: $joueur->prenom, Numéro du Club: $joueur->nclub, Classement: $joueur->clast\n"; -->
         <section class="">
+            
+            <div class="bar-search-classement">
+                <div class="search-classement">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search" placeholder="Rechercher..">
+                </div>
+                <div class="trie-classement">   
+                    <select>
+                        <option value="" disabled selected>Trier par..</option>
+                        <option value="">Point Officiel</option>
+                        <option value="">Point Mensuel</option>
+                        <option value="">Nom</option>
+                    </select>
+                </div>
+            </div>
             <div class="section-classement">
                 <div class="back-entete-tableau-classement">
 
