@@ -12,12 +12,22 @@ foreach ($licenceData->children() as $child) {
 }
 
 // Fonction de comparaison pour trier les éléments
-function compare($a, $b) {
-    return strcmp((string)$a->nom, (string)$b->nom);
+function comparer($a, $b, $mode) {
+    if ($mode === 'point') {
+        return intval($b->point) - intval($a->point);
+    } else if ($mode === 'pointm') {
+        return intval($b->pointm) - intval($a->pointm);
+    } else if ($mode === 'nom') {
+        return strcmp((string)$a->nom, (string)$b->nom);
+    }
 }
 
-usort($data, 'compare');
+// Déterminer le mode de tri en fonction de la valeur sélectionnée dans le select
+$modeDeTri = $_GET['mode'] ?? 'nom'; // Si aucun tri spécifié, par défaut trier par point
 
+usort($data, function ($a, $b) use ($modeDeTri) {
+    return comparer($a, $b, $modeDeTri);
+});
 
 
 $template='classement';

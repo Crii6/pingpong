@@ -56,12 +56,13 @@
                     <input type="text" id="search" placeholder="Rechercher..">
                 </div>
                 <div class="trie-classement">   
-                    <select>
-                        <option value="" disabled selected>Trier par..</option>
-                        <option value="">Point Officiel</option>
-                        <option value="">Point Mensuel</option>
-                        <option value="">Nom</option>
-                    </select>
+                    <form method="GET" action="" id="triForm">
+                        <select name="mode" id="tri">
+                            <option value="nom" <?php if ($modeDeTri === 'nom') echo 'selected'; ?>>Trier par nom</option>
+                            <option value="point" <?php if ($modeDeTri === 'point') echo 'selected'; ?>>Trier par point</option>
+                            <option value="pointm" <?php if ($modeDeTri === 'pointm') echo 'selected'; ?>>Trier par point mensuel</option>
+                        </select>
+                    </form>
                 </div>
             </div>
             <div class="section-classement">
@@ -78,7 +79,7 @@
                     </div>
                 </div>
                     <table class="tableau-classement">
-                        <tbody class="body-tableau-classement">
+                        <tbody class="body-tableau-classement" id="search-results">
                             <?php foreach ($data as $licence) { ?> 
                                 <tr>
                                     
@@ -112,8 +113,31 @@
                 </div>
             <div>
             
+            
         
         </section>
     </main>
-                            
+    <!-- script de recherche liste classement -->
+    <script>
+     $(document).ready(function(){
+        $('#search').keyup(function(){
+            var query = $(this).val().toLowerCase();
+            $(".body-tableau-classement tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(query) > -1)
+            });
+        });
+    });
+
+    document.getElementById('tri').addEventListener('change', function() {
+        var mode = this.value;
+        var currentUrl = window.location.href;
+        var url = new URL(currentUrl);
+        var params = new URLSearchParams(url.search);
+        params.set('mode', mode);
+        window.location.href = url.pathname + '?' + params.toString();
+    });
+    
+
+    </script>
+            
     
