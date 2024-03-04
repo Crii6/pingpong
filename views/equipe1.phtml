@@ -50,7 +50,40 @@
         <section class="">
             
             
-            
+            <?php foreach ($equipeData as $equipe) { ?>
+
+            <p><?php echo $equipe->libequipe ?> </p>
+            <p><?php echo $equipe->libdivision ?> </p>
+            <p><?php echo $equipe->liendivision ?> </p>
+            <p><?php echo $equipe->idepr ?> </p>
+            <p><?php echo $equipe->libepr ?> </p>
+            </br>
+            </br>
+
+
+            <?php } ?>
+
+            <?php foreach ($pouleClassement as $class) { ?>
+                <table style="width: 90%;">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>equipe</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $class->clt ?></td>
+                            <td><?php echo $class->equipe ?></td>
+                            <td><?php echo $class->pts ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2></h2>
+                <h2></h2>
+                <h2></h2>
+            <?php } ?>
             
         
         </section>

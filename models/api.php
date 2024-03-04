@@ -99,6 +99,18 @@ class API {
         }
     }
 
+    public function getEquipesByClub($club, $type) {
+        
+        $extract = $this->connexionAPI('xml_equipe', array ('numclu' => $club, 'type' => $type));
+        return $extract;
+    }
+
+    public function getPouleClassement($division, $poule) {
+
+        $extract = $this->connexionAPI('xml_result_equ', array ('auto' => '1', 'D1' => $division, 'cx_poule' => $poule, 'action' => 'classement'));
+        return $extract;
+    }
+
 
 
 }
