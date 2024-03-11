@@ -63,28 +63,44 @@
 
             <?php } ?>
 
-            <?php foreach ($pouleClassement as $class) { ?>
-                <table style="width: 90%;">
-                    <thead>
-                        <tr>
-                            <th>Pos</th>
-                            <th>equipe</th>
-                            <th>Pts</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><?php echo $class->clt ?></td>
-                            <td><?php echo $class->equipe ?></td>
-                            <td><?php echo $class->pts ?></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h2></h2>
-                <h2></h2>
-                <h2></h2>
-            <?php } ?>
+             
+            <section class="">
             
+                <div class="bar-equipe-individuel">
+                    <h2>L01_REGIONALE 3 MESSIEURS AURA Ph2 Poule 10</h2>
+                </div>
+                <div class="section-classement">
+                    <div class="back-entete-tableau-classement">
+
+                    
+                        <div class="entete-tableau-classement">
+                            <h3 class="entete-nom">Classement</h3>
+                            <h3>Nom d'équipe</h3>
+                            <h3>Joué(s)</h3>
+                            <h3>Points</h3>
+                            
+                        </div>
+                    </div>
+                        <table class="tableau-classement">
+                            <tbody class="body-tableau-classement" id="search-results">
+                                <?php foreach ($pouleClassement as $class) { ?> 
+                                        <tr>
+                                            <td><?php echo $class->clt ?></td>
+                                            <td><?php echo $class->equipe ?></td>
+                                            <td><?php echo $class->joue ?></td>
+                                            <td><?php echo $class->pts ?></td>
+                                        </tr>
+                                <?php } ?>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    
+            
+            
+        
+        </section>
         
         </section>
     </main>

@@ -111,6 +111,11 @@ class API {
         return $extract;
     }
 
+    public function getResultPoule($poule) {
+        $extract = $this->connexionAPI('xml_rencontre_equ', array ('poule' => $poule));
+        return $extract;
+    }
+
 
 
 }
