@@ -2565,4 +2565,136 @@ margin: 9rem auto;
     padding: 2rem 2.5rem;
     border-radius: 1rem;
     text-align: center;
+    box-shadow: 0px 0px 5px black;
+}
+
+.section-equipe{
+    width: 90%;
+    margin: 0 auto 6rem;
+    background-color: rgb(241, 241, 241);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0px 0px 3px black;
+}
+
+.back-entete-tableau-equipe{
+    margin: auto;
+    padding: 1rem;
+}
+
+.entete-tableau-equipe {
+    background-color: rgb(34, 44, 75);
+    display: flex;
+    width: 98%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+
+
+.entete-tableau-equipe h3:nth-child(1){
+    width: 13%;
+}
+.entete-tableau-equipe h3:nth-child(2){
+    width: 60%;
+}
+.entete-tableau-equipe h3:nth-child(3){
+    width: 18%;
+}
+.entete-tableau-equipe h3:nth-child(4){
+    width: 13%;
+}
+
+.tableau-equipe{
+    margin: auto;
+    width: 95%;
+    color: black;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+
+.body-tableau-equipe{
+    line-height: 5rem;
+    width: 98%;
+}
+
+.body-tableau-equipe tr{
+    border-bottom: 1px solid black;
+}
+
+.body-tableau-equipe tr:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.body-tableau-equipe td {
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.body-tableau-equipe td:nth-child(2) {
+    width: 60%;
+    padding-left: 5rem;
+}
+
+.body-tableau-equipe td:nth-child(1) {
+    color: var(--second-color);
+}
+.body-tableau-equipe td:nth-child(4) {
+    color: var(--second-color);
+}
+
+
+
+/* ************************************************TOUR******************************************* */
+
+.victoire {
+    color: green;
+}
+
+.defaite {
+    color: red;
+}
+
+.nul{
+    color: blue;
+}
+
+.orange{
+    color: var(--second-color);
+}
+
+.entete-tour-equipe {
+    background-color: rgb(34, 44, 75);
+    display: flex;
+    width: 98%;
+    margin: auto;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    justify-content: center;
+}
+
+.tour-equipe{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.tour-equipe h4:nth-child(1) {
+    width: 30%;
+}
+.tour-equipe p:nth-child(2), .tour-equipe p:nth-child(4) {
+    font-weight: bold;
+    width: 10%;
+}
+.tour-equipe h4:nth-child(5) {
+    width: 30%;
 }
